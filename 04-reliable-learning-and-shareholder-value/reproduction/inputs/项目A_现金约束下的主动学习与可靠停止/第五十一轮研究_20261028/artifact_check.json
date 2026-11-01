@@ -1,0 +1,32 @@
+{
+  "source_sha256": "5a6e866f25660ae22585c759a4ba731702ebf11c5708c8df7a20cb279036a9fe",
+  "cash_grid_sha256": "0e9efea6963b0ac0f9ef8078bd0ea434a5d93659ad2e0cb59cd118e78085e26b",
+  "independent_decimal_digits": 180,
+  "exact_cash_grid_transitions_checked": 366734,
+  "exact_Bellman_inequalities_checked": 366734,
+  "exact_capture_direction_inequalities_checked": 366734,
+  "finite_business_tail_bounds_checked": 1,
+  "full_market_late_learner_checked": 1,
+  "positive_complete_hard_capture_policies_checked": 3,
+  "original_certification_action_preserved": true,
+  "shorter_optional_business_exposure": "1/250000",
+  "original_optional_exposure_exit_and_earned_cash_reuse_contract_stated": true,
+  "positive_business_fixed_access_fee": "1/1000000000000",
+  "positive_business_access_time": "1/1000000000",
+  "business_fee_prepaid_and_entire_access_calendar_included": true,
+  "positive_access_cost_profile_is_hypothetical_not_observed_quote": true,
+  "learning_fee_alpha_beta_once_equity_and_data_only_evidence_preserved": true,
+  "positive_cash_rate_interval_by_virtual_cash_dominance": [
+    "1/10",
+    "1"
+  ],
+  "critical_cash_rate_fraction_bracket_with_independently_pinned_A49": [
+    "2/25",
+    "1/10"
+  ],
+  "floating_candidate_values_treated_as_finite_certificate": false,
+  "full_certified_business_action_forced_contract_claimed_same": false,
+  "exact_interest_threshold_or_optimal_exposure_claimed": false,
+  "zero_or_low_rate_A49_negative_result_reversed": false,
+  "point_one_profit_target_or_realistic_capacity_claimed": false
+}

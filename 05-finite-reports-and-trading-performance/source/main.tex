@@ -1,0 +1,212 @@
+\documentclass[UTF8,fontset=windows,11pt,a4paper]{ctexart}
+\usepackage{amsmath,amssymb,amsthm,booktabs,geometry,hyperref}
+\DeclareFontShape{OMS}{cmsy}{m}{n}{<5-9>cmsy8<9->cmsy10}{}
+\geometry{left=27mm,right=27mm,top=25mm,bottom=25mm}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.18}
+\clubpenalty=10000\widowpenalty=10000
+\pagestyle{plain}
+\ctexset{section={format=\large\bfseries},subsection={format=\normalsize\bfseries}}
+\newtheorem{theorem}{定理}
+\renewcommand{\proofname}{证明}
+\numberwithin{equation}{section}
+\makeatletter
+\renewcommand{\@maketitle}{\newpage\null\vskip0em
+\begin{center}{\LARGE\heiti\@title\par}\vskip1em
+{\normalsize\@date\par}\end{center}\par\vskip0.7em}
+\makeatother
+\begin{document}
+\title{有限交易报告能约束怎样的表现}
+\author{}\date{2026年10月31日 · 结构与表达重写}
+\maketitle
+\begin{abstract}
+交易程序不披露内部目标和折现参数，且输出报告经过未知平滑时，有限数据未必能够唯一恢复程序。本文研究另一项明确任务：在所有满足同一试验报告、物理校准和正目标条件的程序中，指定参考评价下的损失最多有多大。我们先说明评价量与实际利润的区别，再把无限期目标差写成保留方向的残差平方能量。两个费用各四项主报告只涉及五个目标矩；在共同参数和初态不变时，最坏损失的上确界可准确限制到至多五个持续性成分。一个十二报告合成协议给出相距很小的合法下界与全域上界。该结果约束的是指定参考目标，只有在额外可信的收益预测与风险标定下才能解释为风险调整价值损失，不等同于交易收益率、回撤或任意实盘策略的优劣。
+\end{abstract}
+
+\section{研究问题：不完全了解程序，仍能判断什么}
+委托人准备验收一个交易程序。它能改变程序内部的调仓费用，读取逐期报告，并做一次已知物理调仓；但程序不披露目标组成，报告端还可能平滑输出。慢响应可能来自程序本身，也可能来自目标持续性或报告处理，不能只看速度解释参数。
+
+原识别论文问两个费用设置至少各需多少连续响应，才能统一识别折现与报告记忆。本稿改变问题：参数未必唯一时，是否仍能对指定评价下的损失给出上界？这不是用更少报告替代原识别定理。主报告、校准、初态和评价量都必须另行交代。
+
+本文只围绕这个性能判断组织正文。以全部满足数据的系统评价性质已有系统性框架\cite{informativity}，本稿不将这个组织原则作为创新。报告消元、正矩表示和数值优化是工具，不作为一般方法首创。金融预测误差、不同有限截断方法和求解器消融移入技术材料。
+
+\section{程序、试验和需要评价的损失}
+\subsection{内部目标与报告处理}
+程序使用内部折现 $0<\beta<1$，在给定目标序列 $d_n$ 下，最小化
+\begin{equation}\label{eq:J}
+ J_{\beta,\kappa}(p;d)=\sum_{n\ge0}\beta^n
+ \left[\frac{\rho\beta}{2}(p_n-d_n)^2+
+ \frac\kappa2(p_n-p_{n-1})^2\right].
+\end{equation}
+$p_n$ 为持仓，$\kappa>0$ 是可以直接设置的内部调仓费用系数，$\rho=1/15$ 是已知跟踪权重。它不是现金利率。目标偏离系数等于 $\rho\beta$ 是实质参数化限制，不能将识别到的 $\beta$ 不加条件地解释为一般投资者耐心。
+
+目标是非负衰减成分的混合：
+\begin{equation}
+ d_n=\int_{[0,1)}(1-s)s^n\mu(ds)=\int_{[0,1)}s^n\nu(ds),
+ \qquad \nu(ds)=(1-s)\mu(ds).
+\end{equation}
+$s$ 表示持续性，越接近1衰减越慢；$\mu$ 为有限非零正测度，成分数量无已知上限。允许一次性成分 $s=0$，不允许用 $s=1$ 的零响应成分冒充合法目标。正性和有限性不是有限报告能自行证明的条件。
+
+令 $e_\kappa\in(0,1)$ 满足
+\begin{equation}
+ \kappa(1-e_\kappa)(1-\beta e_\kappa)=\rho\beta e_\kappa.
+\end{equation}
+程序的响应可写成
+\begin{equation}
+ p_n^\kappa=e_\kappa p_{n-1}^\kappa+
+ \int a_\kappa(s)s^n\nu(ds),\quad
+ a_\kappa(s)=\frac{\rho(1-e_\kappa)}{\rho+\kappa(1-e_\kappa)(1-s)}.
+\end{equation}
+对外报告为 $Z_n^\kappa=rZ_{n-1}^\kappa+gp_n^\kappa$。未知记忆 $0<r<1$ 和增益 $g>0$、目标和 $\beta$ 在各实验间共同固定。每个主实验的初始持仓和前置报告都未知非负；校准另外有两项未知非负初态，共六项。
+
+\subsection{哪些数据是实际输入}
+主实验在 $\kappa=1,2$ 各读取四项响应，共八项。物理校准在固定库存 $u$ 上加入已知调仓 $\Delta u=0.001$，读取四项 $R_0,\ldots,R_3$，满足
+\begin{align}
+ R_1&=rR_0+gu,\\
+ R_2&=rR_1+g(u+\Delta u),\qquad
+ R_3=rR_2+g(u+\Delta u).
+\end{align}
+由此 $r$ 和 $g$ 受到同一组报告限制。校准的作用是建立物理尺度：没有它，放大目标和持仓、同时缩小报告增益，可能保持报告不变却放大绝对损失。
+
+合成校准中心为 $(0.01,0.0099,0.01024,0.010444)$。考虑实际观测误差与拟合误差的全部并集后，主报告预测半径为 $2\times10^{-8}$、校准为 $2\times10^{-6}$。这不同于只固定名义中心的一倍半径子集。完整原始主报告、每项误差及共同初态在附件中列出；不能只保留参数粗盒后宣称与原约束相同。
+
+\subsection{表现好坏相对于什么}
+委托人指定参考折现 $b=0.9999$ 和评价费用1。评价时使用标准零初态，在同一个目标 $d$ 上比较候选规则与参考规则：
+\begin{equation}\label{eq:loss}
+ L=J_{b,1}(p^\beta;d)-J_{b,1}(p^b;d)\ge0.
+\end{equation}
+参考规则 $p^b$ 最小化这一参考目标，故差值非负。实验中的未知初态只用于解释报告，评价中的零初态是统一比较条件，不能将两者混成实际持仓损益。
+
+记 $\mathcal M$ 为满足全部报告、校准、初态和目标条件的模型集合。审计量为 $V=\sup_{\mathcal M}L$：对每个允许模型计算损失，再取最坏上确界。它不是先选一个拟合最好的模型再评价，也不要求存在达到上确界的单一模型。
+
+如果要解释为金融价值，另须规定单位持仓的预测超额收益为 $m_n=\rho d_n$，收益与风险晚一期、调仓费当期记账。完成平方才使 $L$ 等于参考规则相对候选的风险调整预期价值优势。未扣风险的收益差还含持仓风险项，可能符号相反；因此 $L>0$ 不表示候选实际收益率更低。一般随机预测、财富限制和预测正确性尚未由这些报告验证。
+
+\section{把无限期损失写成可检查的对象}
+\subsection{残差是什么，为什么要保留方向}
+令 $e=e_1(\beta)$、$e_0=e_1(b)$、$\Delta e=e-e_0$，并定义
+\begin{equation}
+ D_e(s)=\rho+(1-e)(1-s),\quad D_0(s)=\rho+(1-e_0)(1-s),
+\end{equation}
+\begin{equation}
+ a(s)=\frac{\rho(1-e)}{D_e(s)},\qquad
+ H(s)=\frac{\rho^2}{D_e(s)D_0(s)}.
+\end{equation}
+一个持续性成分对候选与参考差异的创新残差为
+\begin{equation}
+ u_n(s)=\Delta e\left[a(s)\sum_{j=0}^{n-1}e^{n-1-j}s^j-H(s)s^n\right],
+\end{equation}
+空和为零。它表示在参考调整关系下，候选多出来的偏差。即使 $s=e$，有限和也完全有定义，不需要除以 $s-e$。
+
+\begin{theorem}[原评价量的完整平方表示]\label{thm:energy}
+在上述条件下，
+\begin{equation}\label{eq:energy}
+ L=\frac1{2e_0}\sum_{n\ge0}b^n
+ \left[\int u_n(s)\nu(ds)\right]^2.
+\end{equation}
+这等于原无限期目标差，不是另选的代理指标。
+\end{theorem}
+\begin{proof}
+写 $x_n=p_n^\beta-p_n^b$，标准初态给 $x_{-1}=0$。参考最优性使一次项消失，原二次差为
+\begin{equation}
+ \frac12\sum_{n\ge0}b^n[\rho b x_n^2+(x_n-x_{n-1})^2].
+\end{equation}
+根方程等价于 $e_0^{-1}+be_0=1+b+\rho b$，展开可将此式改为 $(2e_0)^{-1}\sum b^n(x_n-e_0x_{n-1})^2$。候选递推与恒等式 $a(s)-a_0(s)=-\Delta e H(s)$ 给 $x_n-e_0x_{n-1}=\int u_n\,d\nu$，得到式\eqref{eq:energy}。先在有限前缀展开，再用稳定根、有限目标测度和 $b<1$ 令尾项趋零。
+\end{proof}
+
+\noindent\textbf{解释。}
+不同目标成分的残差可以相互抵消；正目标权重不表示残差都朝同一方向。先把各成分残差长度相加再平方会丢失抵消，可能显著放宽上界。保留方向的支撑不等式，将报告约束转成包含所有可能残差的区域；再对区域取最大平方长度得到安全上界。方向和数值求解器只负责提出不等式，每条采用的不等式必须在连续参数范围有效。
+
+\section{为什么只需要五个持续性成分寻找最坏情形}
+目标可以有任意多成分，不能事先假设只有五个。下面说明的是求最坏上确界时可以限制到五个，不是从数据识别出五个真实成分。
+
+固定共同参数和所有初态。令 $D_\kappa(s)=\rho+\kappa(1-e_\kappa)(1-s)$，定义正测度 $\xi=\nu/(D_1D_2)$。第 $\kappa$ 个实验第 $n$ 项报告的目标部分为 $\int Q_{\kappa,n}(s)\xi(ds)$，其中
+\begin{equation}
+ Q_{\kappa,n}(s)=g\rho(1-e_\kappa)D_{3-\kappa}(s)
+ \sum_{j=0}^{n}r^{n-j}\sum_{v=0}^{j}e_\kappa^{j-v}s^v.
+\end{equation}
+$n\le3$ 时次数至多4，故保留 $\xi$ 的0至4阶五个矩，就保留全部八主报告；校准及固定初态不随目标替换而变。
+
+\begin{theorem}[最坏上确界的五成分表示]\label{thm:five}
+每个合法有限正目标，都可替换为至多五个严格 $s<1$ 的有限正目标，使全部报告、共同参数和初态不变，且损失不降低。因此 $V$ 准确等于该五成分类上的上确界。
+\end{theorem}
+\begin{proof}
+将式\eqref{eq:energy}写成 $L=\|U\|^2$，其中 $U=\int\Phi(s)\xi(ds)$，范数是带权平方和。稳定根与 $b<1$ 使 $\Phi$ 在 $[0,1]$ 上有界，故下述积分存在。若 $U\ne0$，对五个单项式与额外函数 $\langle\Phi(s),U\rangle$ 使用正求积\cite{bt}，得到至多六个原允许节点，保留这些积分。新向量 $U'$ 满足 $\langle U',U\rangle=\|U\|^2$，故 $\|U'\|\ge\|U\|$。
+
+若有六个正权重，五行矩约束存在非零零方向。沿此方向移动权重至仍非负的区间两端，五矩不变；平方范数对权重凸，至少一个端点值不低于当前值，且该端点至少消去一个权重。于是剩至多五个。$U=0$ 时只保留五矩即可，新损失非负。
+
+节点取在原实际集中集 $[0,1)$。恢复 $\mu$ 时，每项权重乘 $D_1D_2/(1-s)$，由于只有有限个严格小于1的节点，仍为有限正测度。该子类本来属于原类，因此两边上确界相等。所需正求积的原集中集版本及积分条件在附件中逐项列明。
+\end{proof}
+
+\noindent\textbf{解释与限制。}
+这一结果将任意成分目标的最坏搜索化为有限变量问题，但节点、权重、参数和六个初态仍共同未知，问题仍非凸。没有证明五是最少数量，没有证明上确界取到，也没有完成全局最优数值求解。将未知持续性预先固定在网格上，是另一种近似，不能替代这个结论。
+
+\section{一个协议中的数值上下界}
+只保留一个与主定理相同权限的合成协议。其损失上确界满足
+\begin{equation}
+ 2.03435433562195\times10^{-8}<V
+ \le2.041739979673235\times10^{-8}.
+\end{equation}
+上界与下界之比小于1.00364。下界来自符合全部约束的具体模型；上界覆盖全部允许模型。两者接近，不等于精确最优值已知。
+
+下界搜索曾实际运行五次标准SLSQP，五次求解器均未报告成功；过程中保留的候选另转为精确有理参数核验后，才可用于合法下界。不能把求解器失败改写成成功收敛，也不能把保留候选当作全局最优。上界由报告约束、不等式和全部参数区间覆盖组成；有限网格只用于提出候选。
+
+本次在隔离副本实际重跑合法候选核验和全域混合上界核验。后者重新检查12个细分片及继承的完整覆盖，得到相同全域上界；并非重新求解全部137片或运行新的完整搜索。输入、脚本散列和执行输出随稿保存。
+
+\section{验收时可以据此作什么决定}
+如果客户事先规定参考目标的容差 $L_{\max}$，且全域上界不超过容差，可以在所列模型和试验条件下接受该项性能要求；若一个合法模型的损失已经超过容差，现有报告就不足以保证全部允许程序达标。上下界跨越容差时，应保留未决，而非选一个拟合点作结论。
+
+这项指导要求客户确实能设置内部费用、保持共同目标和报告机制、执行可信物理校准，并接受正衰减目标及指定参考评价。只有外部市场成交数据时，不具备这些权限。预测偏差、风险标定误差与有限能量截断已另有技术结果，但它们引入外部误差预算，不应堆叠成正文的额外主线。
+
+与原识别文的联系是同一交易响应模型下的不同任务；八项主报告加四项校准不等于原两个费用各六项前缀。本文的可检查价值在于：即使内部解释仍有多个，仍可对一个明确的目标损失给出覆盖所有解释的界，而不是宣称从少量匿名报告恢复了真实盈利能力。
+
+\appendix
+\section{残差积分和无限期平方和的合法性}
+固定参数时 $D_e,D_0\ge\rho$，因此 $a(s)\le1-e$、$H(s)\le1$。对 $0\le s\le1$，有限和满足
+\begin{equation}
+ \sum_{j=0}^{n-1}e^{n-1-j}s^j\le\frac1{1-e},
+ \qquad |u_n(s)|\le2|\Delta e|.
+\end{equation}
+故带权平方和的尾部由几何级数一致控制。目标测度有限使各积分存在，允许用有限前缀极限得到正文定理\ref{thm:energy}。同样，乘上有界的 $D_1D_2$ 后，五成分证明中的向量函数 $\Phi$ 有界且连续；标量查询可积，符合正求积的前提。这些条件不能仅由一句“可交换积分”略去。
+
+\section{直接计算完整能量，不截断到有限期}
+令 $S_s(n)=\sum_{j=0}^{n-1}e^{n-1-j}s^j$。几何级数给
+\begin{align}
+ \sum_{n\ge0}b^ns^nt^n&=\frac1{1-bst},\\
+ \sum_{n\ge0}b^ns^nS_t(n)&=\frac{bs}{(1-bes)(1-bst)},\\
+ \sum_{n\ge0}b^nS_s(n)S_t(n)
+ &=\frac{b(1-b^2e^2st)}{(1-be^2)(1-bes)(1-bet)(1-bst)}.
+\end{align}
+因此完整损失可写为 $L=\iint K(s,t)\nu(ds)\nu(dt)$，其中
+\begin{align}
+ K(s,t)=\frac{(\Delta e)^2}{2e_0(1-bst)}
+ \bigg[&H(s)H(t)-\frac{bsH(s)a(t)}{1-bes}
+ -\frac{bta(s)H(t)}{1-bet}\\
+ &+\frac{a(s)a(t)b(1-b^2e^2st)}
+ {(1-be^2)(1-bes)(1-bet)}\bigg].
+\end{align}
+所有分母在原定义域为正，没有 $s-e$ 或 $t-e$ 的假奇点。有限目标模型可以直接双重求和，核验原无限期目标，不需要把有限截断值冒称完整损失。
+
+核由带权内积构成，整体半正定；单个 $K(s,t)$ 仍可为负。分别核查单成分、交叉项和原二次目标，是检查数值实现是否错误丢掉方向的办法。一个实例中的界改善倍数不能直接用于全体模型上界。
+
+\section{五成分替换为什么保留原噪声要求}
+替换固定了 $\beta,r,g$ 和六项初态，并准确保留每项报告预测。因而无论原数据误差是逐项区间还是同一读数在多个方程中共享，替换后预测仍使用原来的误差解释。该证明不依赖先把误差拆成独立新变量，也没有增加新数据。
+
+在连续求解中，节点可接近1，权重可变大；合法性仍要求每个实际节点严格小于1、恢复后的 $\mu$ 有限。因此应报告上确界，不能把边界极限当成已经取得的合法最坏模型。拟合和候选筛选只给下界提案，全域上界须独立覆盖所有参数。
+
+\section{主报告的实际输入}
+下表仅为便于阅读的小数名义中心，不是无误差真值；复现使用随附输入JSON中的精确分数。正式预测半径仍按正文的全部误差并集。
+\begin{center}\begin{tabular}{crr}\toprule
+期数 & 费用1 & 费用2\\\midrule
+0 & $0.010200844479$ & $0.010248279902$\\
+1 & $0.010098836034$ & $0.010145797103$\\
+2 & $0.009997847674$ & $0.010044339132$\\
+3 & $0.009897869197$ & $0.009943895740$\\
+\bottomrule\end{tabular}\end{center}
+
+\begin{thebibliography}{9}
+\bibitem{bt} Bayer C., Teichmann J. The Proof of Tchakaloff's Theorem. 2005. Corollary 2，任意可积函数及原集中集上的有限正求积。\href{https://arxiv.org/pdf/math/0502473}{原文}。
+\bibitem{informativity} van Waarde H. J., Eising J., Camlibel M. K., Trentelman H. L. The informativity approach to data-driven analysis and control. 2023. 本稿仅作问题组织背景，不直接套用其系统定理。\href{https://arxiv.org/pdf/2302.10488}{原文}。
+\end{thebibliography}
+\end{document}

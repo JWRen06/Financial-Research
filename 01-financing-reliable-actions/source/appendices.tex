@@ -1,0 +1,230 @@
+\section{正模型的构造与行动的分离}\label{app:construction}
+本附录给出定理所用的任务。所有常数均与 $\eta$ 无关；符号 $C$ 可逐行改变。先固定 $d+1$ 个互异正数 $x_j$。矩阵的行取为 $1,x^2,\ldots,x^d$，存在非零核向量 $u$。广义 Vandermonde 行列式保证
+\[
+ \sum_j u_jx_j\ne0,\qquad \sum_j u_jx_j^{d+1}\ne0.
+\]
+取严格正向量 $\sigma_0$ 和充分小的 $t>0$，令 $\sigma_\pm=\sigma_0\pm tu$。于是两组高速权重的总质量及第 $2$ 至 $d$ 矩相同，一阶矩和第 $d+1$ 矩不同。
+
+慢速节点取为固定正数 $z_1,\ldots,z_{n+d+1}$，使函数
+\[
+ 1,\quad 1-e^{-kz}\ (1\leq k\leq n),\quad z,\quad z^2,\ldots,z^d
+\]
+在这些节点的取值矩阵 $V$ 可逆。这些解析函数线性独立，故可逐次选点得到这样的矩阵。选严格正慢速权重 $m_0$，并缩放使其总质量为整数 $K$；令 $c=\sum_i m_{0i}z_i$。
+
+加入高速测度 $b\eta^d\sum_j\sigma_{sj}\delta_{x_j/\eta}$。以它对上述函数的积分组成向量 $r_s$，但把函数 $z$ 对应的分量设为零。定义
+\[
+ m_s=m_0-V^{-1}r_s,\qquad
+ \nu_s^\eta=\sum_i m_{si}\delta_{z_i}
+          +b\eta^d\sum_j\sigma_{sj}\delta_{x_j/\eta}.
+\]
+先取 $b>0$ 足够小，再取 $\eta$ 足够小，所有 $m_{si}$ 严格为正。总质量、历史均值和第 $2$ 至 $d$ 矩等于基准值，且不随 $s,\eta$ 改变。慢速部分的一阶矩等于 $c$，因此
+\[
+ f_s'(0)=b\eta^{d-1}\sum_j\sigma_{sj}x_j>0,
+ \qquad c>P_s(1).
+\]
+两端的慢速权重差仅来自历史均值行的指数尾，大小为 $O(\eta^d e^{-x_{\min}/\eta})$。正慢速背景还给出统一常数 $\ell,\kappa,C>0$，对 $0\leq q\leq1$ 有
+\begin{equation}\label{eq:shape}
+ \ell q\leq P_s(q)\leq Cq,\qquad
+ -Cq^2\leq f_s(q)\leq A\eta^{d-1}q-\frac\kappa2q^2.
+\end{equation}
+这里曲率下界来自固定慢速背景；二阶导数的绝对上界来自共同的有限二阶矩。
+
+最优投入为 $\eta^{d-1}$ 阶，最大利润为 $\eta^{2d-2}$ 阶。当 $d>2$，在 $q=\eta^{d-1}v$ 下，归一化利润局部一致收敛到
+\[
+ b\Bigl(\sum_j\sigma_{sj}x_j\Bigr)v-\frac{B_2}2v^2.
+\]
+两端极限的唯一最优点不同。当 $d=2$，用 $q=\eta v$ 得到极限
+\[
+ b\sum_j\sigma_{sj}(1-e^{-vx_j})-\frac{B_{2,\mathrm{slow}}}2v^2.
+\]
+取 $b$ 足够小，最优点处于靠近零的区间，一阶矩差保证两端最优点不同。两种情形下再取固定 $\tau>0$ 足够小，两端的 $\tau\eta^{2d-2}$ 最优行动集合不相交，且有正的归一化间距。故可靠输出行动必能可靠检验端点。这一步说明为何任务确实需要学习；它本身还不是资金下界。
+
+\section{完整日志的信息上界}
+记 $\mathcal K_j(q)$ 为一个窗口在两端之间的 KL 散度，两个方向均考虑。一个身份的首次成功时刻在 $0<t<1$ 的密度及失败质量分别为
+\[
+ h_s(t)/K=\frac qK\int ze^{-qtz}\nu_s(dz),\qquad
+ \lambda_s/K=\frac1K\int e^{-qz}\nu_s(dz).
+\]
+身份独立，因此窗口散度等于单身份散度的 $K$ 倍。它也等于总质量为 $K$ 的标记泊松过程的散度，但这里仅用这个等式计算信息，现金始终服从固定 $K$ 模型。
+
+慢速背景给出 $h_s(t)\geq c_0q$ 和 $\lambda_s\geq c_0$。高速部分及慢速修正满足
+\[
+ |h_+(t)-h_-(t)|\leq Cq\eta^{d-1}e^{-qx_{\min}t/\eta}
+                  +Cq\eta^d e^{-x_{\min}/\eta}.
+\]
+用 $\KL(P,Q)\leq\int(dP-dQ)^2/dQ$，对时刻积分并加上失败项，得到
+\begin{equation}\label{eq:firstKL}
+ \mathcal K_{\mathrm{first}}(q)
+ \leq C\eta^{2d-2}\min\{q,\eta\}.
+\end{equation}
+失败项的差是成功密度差的积分，不是另一份独立资料；身份目录也已包含在此完整实验中。$q=0$ 时散度为零。
+
+重复日志中，给定消息总数，消息时刻的条件分布是均匀次序统计量，与速度无关。因此只需分析混合泊松计数。对 $q\leq\eta$，在计数至少为 $2$ 时额外揭示身份速度类型，只会增大信息。零次和一次的混合概率的 Pearson 界为 $C\eta^{2d-2}q$；高速身份出现多次的总质量至多
+\[
+ C\eta^d\Pr\{\operatorname{Pois}(qx_j/\eta)\geq2\}
+ \leq C\eta^{d-2}q^2.
+\]
+高速类型的两端权重比统一有界，慢速差为指数小量，故这些事件的 KL 同样被上述量控制。对 $q\geq\eta$，直接揭示全部速度类型，得到上界 $C\eta^d$。合并可得
+\begin{align}
+ \mathcal K_{\mathrm{repeat}}(q)&\leq C\eta^{2d-2}q+C\eta^{d-2}q^2,\label{eq:repKLquad}\\
+ \mathcal K_{\mathrm{repeat}}(q)&\leq C\eta^{d-1}q,
+ \qquad \mathcal K_{\mathrm{repeat}}(q)\leq C\eta^d.\label{eq:repKLlinear}
+\end{align}
+它们允许免费完整重复日志，因而也适用于任意付费、取消和删减方案的下界。
+
+自适应策略的 $q_i$ 在本窗日志前确定。KL 链式法则把停止日志的散度界为 $\E\sum_i\mathcal K(q_i)$；付款是否可行也是过去日志的函数，不产生额外信息。无期限策略先截断到有限日历窗，再对完整停止日志取极限。不能先条件化于事后选出的投入序列再声称各窗独立。
+
+\section{信息为什么要求持有现金}
+\subsection{一个用于付款路径的概率引理}
+以下证明是资金下界的关键。设每窗奖励为 $Y_i$，$\mu_i=\E[Y_i\mid\F_{i-1}]$，$D_i=Y_i-\mu_i$。对已经开出的窗口，假定
+\[
+ |D_i|\leq K,\quad \ell q_i\leq v_i:=\E[D_i^2\mid\F_{i-1}]\leq Cq_i,
+ \quad \mu_i-cq_i\leq aq_i.
+\]
+在本模型中 $v_i=P_i(q_i)(1-P_i(q_i)/K)\asymp q_i$，因为固定正背景使 $P_i(1)<K$ 一致成立；删除信息费只会帮助支付。
+
+\begin{lemma}[完成累计投入需要现金]\label{lem:cash}
+设 $T\to\infty$、$a\sqrt T\leq1$。若初始资金 $B=o(\sqrt T)$，则合法完成累计投入至少 $bT$ 的概率趋于零，其中 $b>0$ 固定。
+\end{lemma}
+\begin{proof}
+反设完成概率沿子序列大于 $p>0$。可为每个问题选有限日历截断，使截断内完成概率至少 $p/2$。实际停止、停付或到达截断后，仅为证明延伸鞅：使用独立的对称 $\pm1/2$ 增量，并令延伸的 $q=1,v=1/4$。这不向实际策略提供现金或信息。
+
+令 $M_j=\sum_{i\leq j}D_i$、$V_j=\sum_{i\leq j}v_i$，并定义方差时钟
+\[
+ \tau_T(t)=\inf\{j:V_j>Tt\},\qquad
+ N_T(t)=\frac{M_{\tau_T(t)}-M_{\tau_T(0)}}{\sqrt T}.
+\]
+每次时钟越过目标的超调至多固定常数。有限截断下的停止等距式再经 $L^2$ 极限给出
+\[
+ \E M_{\tau_T(t)}^2=\E V_{\tau_T(t)}\leq Tt+C.
+\]
+这不需要假定 $\E\tau_T(t)<\infty$。
+对 $H_j=\sum_{i\leq j}(D_i^2-v_i)$，有
+\[
+ \E\sup_{j\leq\tau_T(t_0)}|H_j/T|^2
+ \leq \frac{4K^2(Tt_0+C)}{T^2}\longrightarrow0.
+\]
+因此 $N_T$ 的可选二次变差一致趋于 $t$，最大跳跃至多 $K/\sqrt T$，初始时钟项趋于零。鞅函数中心极限定理\cite[Theorem 2.1(i)]{whitt}遂给出 $N_T\Rightarrow W$，其中 $W$ 为从零开始的标准布朗运动。
+
+合法付款意味着每个完成前缀的现金非负，所以
+\[
+ M_j\geq-B-a\sum_{i\leq j}q_i\geq-B-aV_j/\ell.
+\]
+在完成累计投入 $bT$ 的事件上，取 $0<t_0<\ell b/4$，上述逆时钟直到 $t_0$ 都位于实际完成的前缀内。因此
+\[
+ \inf_{0\leq t\leq t_0}\{N_T(t)+t/\ell\}\geq-e_T,
+ \quad
+ e_T=\frac{B+|M_{\tau_T(0)}|+aC/\ell}{\sqrt T}\longrightarrow0.
+\]
+布朗运动从零开始立即穿过任意负线性边界，故右侧生存事件的极限概率为零。函数收敛、闭集上界及先固定再令误差阈值趋零，给出矛盾。这里对无条件鞅取极限，没有在“成功完成”的选择事件下套用中心极限定理。
+\end{proof}
+
+\subsection{把可辨别性接到引理上}
+两端行动集合分离，所以可靠策略的停止日志总变差至少为 $\rho=1-2\delta>0$。若每窗 KL 至多 $kq_i$，把策略截断在累计投入首次达到 $S=b/k$ 的位置；超调至多 $1$，截断日志总变差至多 $\sqrt{(b+k)/2}$。完整和截断实验可耦合，因此两端至少有一个以固定正概率触及此阈值（选 $b$ 足够小）。
+
+取 $T=\min\{1/k,1/a^2\}$，则 $a\sqrt T\leq1$，阈值投入至少为 $bT-1$。引理\ref{lem:cash}排除 $B=o(\sqrt T)$，得到
+\begin{equation}\label{eq:cashinfo}
+ B\gtrsim\min\{k^{-1/2},a^{-1}\}.
+\end{equation}
+本构造 $a\asymp\eta^{d-1}$。代入首次的 $k\asymp\eta^{2d-2}$ 得 $B\gtrsim\eta^{1-d}$；代入重复的 $k\asymp\eta^{d-1}$ 得 $B\gtrsim\eta^{(1-d)/2}$。这是现金波动的必要准备，不是平均经营亏损。
+
+\subsection{重复反馈还需覆盖经营亏损}
+当 $d\geq3$，令 $L=\eta^{2-d}\to\infty$，反设 $B=o(L)$。将策略再截断在 $\sum q_i$ 达到 $L^2$ 或 $\sum q_i^2$ 达到 $bL$ 时。由\eqref{eq:repKLquad}，截断实验的 KL 至多
+\[
+ C\eta^{2d-2}(L^2+1)+C\eta^{d-2}(bL+1)=Cb+o(1).
+\]
+累计投入出口的概率由引理\ref{lem:cash}趋于零，因为 $aL\to0$。对平方投入出口，只计算实际已开窗的账目。即使免除全部信息费、赠与最后已预付窗口的完整奖励，期望现金仍非负，\eqref{eq:shape}给出
+\[
+ \frac\kappa2\E\sum q_i^2\leq B+a\E\sum q_i\leq B+a(L^2+1).
+\]
+于是到达平方出口的概率至多 $2[B+a(L^2+1)]/(\kappa bL)\to0$。取 $b$ 小，截断实验又无法可靠区分端点，矛盾。因此 $B\gtrsim L$。当 $d=2$ 此项为常数，已被波动下界覆盖。两项合并就是定理\ref{thm:capital}的重复反馈下界。
+
+\section{期限下界}\label{app:deadline}
+首次和重复的逐窗信息分别至多 $C\eta^{2d-1}$、$C\eta^d$。可靠二点检验需要固定正 KL，所以其最短期限分别至少为 $\eta^{-2d+1}$ 和 $\eta^{-d}$ 阶。
+
+首次任务还需更精细的现金界。写 $k=C\eta^{2d-2}$，二点检验的数据处理不等式给出 $ks\geq D_\delta$，其中
+\[
+ s=\E\sum_{i\leq H}q_i,\qquad
+ D_\delta=(1-2\delta)\log\frac{1-\delta}{\delta}>0.
+\]
+在失败后令投入为零；逐窗期望账目及 Cauchy--Schwarz 给出
+\[
+ B\geq\frac\kappa2\E\sum q_i^2-as
+   \geq\frac{\kappa s^2}{2H}-as.
+\]
+当 $H\leq\kappa D_\delta/(4ak)$ 时，右端在 $s\geq D_\delta/k$ 上递增，故 $B\gtrsim1/(k^2H)$。更大的 $H$ 下，该项至多固定倍数的 $k^{-1/2}$，已被首次现金下界覆盖。由 $a\asymp\sqrt k$ 得到
+\[
+ B\gtrsim\eta^{1-d}+\eta^{-4d+4}/H.
+\]
+下节给出达到相同阶数的策略，从而同时完成定理\ref{thm:deadline}。
+
+\section{达到资金阶的策略与连续参数}\label{app:upper}
+\subsection{怎样取得足够证据}
+首次方案取 $q\leq\alpha\eta$，其中 $\alpha>0$ 固定且小。由构造，两端成功均值差至少为 $c_1\eta^{d-1}q$，而成功均值至多 $Cq$。独立窗口的有界变量集中界说明
+\[
+ N\asymp\frac1{\eta^{2d-2}q}
+\]
+即可达到固定检验错误率。给定 $H\geq C\eta^{-2d+1}$，取 $N=H$、$q=A/(\eta^{2d-2}H)\leq\alpha\eta$。无期限时可取 $q\asymp\eta^{d-1}$、$N\asymp\eta^{-3d+3}$。
+
+重复方案取 $q=\alpha\eta$，每个成功身份至多购买 $d$ 条额外消息，记录总数是否达到 $d+1$。该事件的强度为 $O(\eta^d)$，两端强度差至少为 $c_2\eta^d$。这是因为高速权重的第 $d+1$ 矩不同；取 $\alpha$ 小时，相应泊松尾的首项不相消。慢速背景贡献仅 $O(\eta^{d+1})$。因此 $N\asymp\eta^{-d}$ 窗足以可靠区分。
+
+\subsection{预留多少余额才能付完}
+上述固定投入策略中，记每身份扣除消息费后的收入为 $W\in[0,1]$，令
+\[
+ D(q)=\max_\theta\{cq-K\E_\theta W\}_+,
+ \qquad \Psi_2(q)=K\max_\theta\E_\theta W^2.
+\]
+对任意 $t>0$，$e^{-tW}\leq1-tW+t^2W^2/2$，从而独立身份的指数超鞅和 Ville 不等式给出全前缀的统一下尾界。具体地，余额
+\begin{equation}\label{eq:reserve}
+ B=cq+ND(q)+\sqrt{2N\Psi_2(q)\log(2/\delta)}
+\end{equation}
+使中途不能预付的概率至多 $\delta/2$。首项是下一窗预付款，第二项覆盖累计期望亏损，第三项覆盖随机低收入；$\Psi_2$ 是身份二阶矩的和，不是整个窗口收入的二阶矩。
+
+首次有 $D(q)\leq Cq^2$、$\Psi_2(q)\leq Cq$，故准备金阶为 $Nq^2+\sqrt{Nq}+q$。代入给定期限策略即得 $\eta^{-4d+4}/H+\eta^{1-d}$。重复方案的购买费期望为 $O(\eta^2)$，故 $D(\alpha\eta)\leq C\eta^2$、$\Psi_2\leq C\eta$，代入得到 $\eta^{2-d}+\eta^{(1-d)/2}$。统计错误另分配 $\delta/2$，合并得到联合成功。固定可选开通费只增加固定准备金额。
+
+\subsection{由端点推广到连续行动学习}
+令 $\nu_\theta=(1+\theta)\nu_+/2+(1-\theta)\nu_-/2$，$-1\leq\theta\leq1$。这是一整条已知曲线，不是两个答案的分类。所有参数的最优点都在 $[0,R]$，$R=C\eta^{d-1}$；在此区间 $-f_\theta''\geq\kappa$。写 $f_\theta=f_0+\theta g$，令 $L=\sup_{[0,R]}|g'|\leq C\eta^{d-1}$。
+
+若 $q_{\widehat\theta}$ 精确最大化估计参数的利润，强凹性及一阶最优条件给出
+\begin{equation}\label{eq:localaction}
+ \max_q f_\theta(q)-f_\theta(q_{\widehat\theta})
+ \leq\frac{L^2}{2\kappa}|\theta-\widehat\theta|^2.
+\end{equation}
+证明方法是把真实利润在 $q_{\widehat\theta}$ 处的梯度误差界为 $L|\theta-\widehat\theta|$，再最大化 $hd-\kappa d^2/2$；边界最优点使用同一个变分不等式。若数值行动另有梯度残差 $e$，则把右侧换成 $(L|\theta-\widehat\theta|+e)^2/(2\kappa)$。
+
+两种统计量的均值均为 $\theta$ 的仿射函数。因此相同窗数就能把参数估计到足够小的固定精度；\eqref{eq:localaction}随后给出 $\tau\eta^{2d-2}$ 的行动精度，\eqref{eq:reserve}对全部参数统一成立。端点属于连续类，必要下界自然继承。这完成两个主定理。此推广增加了任务范围，并不改变已知模板这一先验条件。
+
+\section{有限案例的可复核定义}\label{app:case}
+以下规格与附件中的本机程序一致。令 $A$ 的三行为 $1,1-e^{-z},z^2$，右侧为 $(1,0.5,25)^\top$。对 $w_+$ 固定第 $2,3,6$ 个分量为 $10^{-4}$，解其余三个；对 $w_-$ 固定第 $1,4,5$ 个分量为 $10^{-4}$，解其余三个。近似值为
+\begin{align*}
+ w_-&=(.0001,.46988951,.50268691,.0001,.0001,.02712359),\\
+ w_+&=(.53970410,.0001,.0001,.23181432,.22818158,.0001).
+\end{align*}
+程序使用线性方程的双精度解，而非上述截断小数。利润内部按每身份计算，即成本 $1.5$、误差 $.002$，最终统一乘 $K=32$。
+
+\subsection{消息类别与估计器}
+给定速度 $z$，令 $\lambda=qz$。首次时刻区间 $[a,b]$ 的概率为 $e^{-\lambda a}-e^{-\lambda b}$；该区间内首到且全窗恰有一次或两次消息的概率分别为
+\[
+ \lambda e^{-\lambda}(b-a),\qquad
+ \lambda^2e^{-\lambda}\left[(b-a)-\frac{b^2-a^2}2\right].
+\]
+剩余部分是至少三次；未命中概率为 $e^{-\lambda}$。按速度权重求和，就得到 9 类或 25 类的精确类别概率。购买策略每身份净奖励分别为 $0,1,1-\chi,1-2\chi$。
+
+类别概率写为 $p_{\theta l}=a_l+\theta b_l$。定义分数 $t_l=b_l/a_l$、$I=\sum_l b_l^2/a_l$，则 $\E_\theta t=\theta I$。用 $N$ 窗的全部 $KN$ 个身份计算 $\widehat\theta=\operatorname{clip}_{[-1,1]}(\overline t/I)$。令 $v_{\max}$ 是 $\operatorname{Var}_\theta(t)$ 在参数区间的最大值，$R_t=2\max_l|t_l|$。10 个预定检查点为
+\[
+ 64,128,256,512,768,1024,1536,2048,3072,4096.
+\]
+取统计错误 $.02$、$u=\log(2\cdot10/.02)$，Bernstein 不等式与并集界给出同时置信半径
+\[
+ r_N=\frac{\sqrt{2v_{\max}u/(KN)}+2R_tu/(3KN)}{I}.
+\]
+区间裁剪到 $[-1,1]$。所有检查均使用这一预定规则，不以真实参数决定何时结束。
+
+行动通过 20001 点参数表、48 次二分求根和线性插值得到。只在最优点所在的小投入区间计算曲率，使用 $\kappa\simeq2.12114$、$L\simeq.764908$（均为每身份量）；插值梯度残差上界约 $.000450765$。区间内行动损失是参数的凸函数，因此最大值在区间端点；计算端点最优利润时另加梯度残差平方除以 $2\kappa$ 的上界。只有整个区间均满足精度时才输出。
+
+\subsection{调参、现金与独立验证}
+投入菜单为 $[.005,.24]$ 上的 65 个几何等距值。每个候选投入先按上述半径和局部行动界求最晚所需检查点，再按\eqref{eq:reserve}（现金错误 $.02$）求充分准备金，选择其最小者。充分准备金覆盖整个连续区间，但使用普通双精度数值求值，未做严格区间算术认证。
+
+较小的验证余额单独由试运行确定：五个参数 $-1,-.5,0,.5,1$ 各 400 条路径，取所需初始现金的最高 $.995$ 分位数，乘 $1.2$ 后加一窗预付款。最终九点网格验证使用独立固定种子，不再调整投入或余额。每一窗先核查预付款，再抽取同一身份类别，并同时更新净收入和统计量；余额不足立即失败，不先看下一窗数据。
+
+联合成功要求合法输出、真实行动损失合格及所有已计算置信区间覆盖真值。18 组各 2000 条路径的单侧 Clopper--Pearson 下界采用错误概率 $.05/18$。额外独立生成器按速度、指数首到和后续泊松消息直接生成 80 万个身份，与类别公式的同时区间核对；该检查用于验证生成律，不代替主验证。所有种子、运行时版本、原始汇总结果及源码哈希均保存在复现目录。

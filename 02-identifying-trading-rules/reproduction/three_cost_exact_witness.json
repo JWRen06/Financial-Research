@@ -1,0 +1,147 @@
+{
+  "beta": "4/5",
+  "rho": "3",
+  "costs": [
+    "1",
+    "40/17",
+    "90/13"
+  ],
+  "prefix_length": 4,
+  "selected_equations": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      2,
+      1
+    ]
+  ],
+  "exact_nonzero_determinant": "-774923133269933152/566638764421266783675",
+  "identification": "this exact dataset, not a uniform minimum theorem",
+  "request": {
+    "rho": "3",
+    "costs": [
+      "1",
+      "40/17",
+      "90/13"
+    ],
+    "reports": [
+      [
+        "8/55",
+        "246/1375",
+        "2159/13750",
+        "33387/275000"
+      ],
+      [
+        "10268/98475",
+        "118592/820625",
+        "1713124/12309375",
+        "2367624/20515625"
+      ],
+      [
+        "14456/251425",
+        "576472/6285625",
+        "632528/6285625",
+        "14776528/157140625"
+      ]
+    ],
+    "error_bounds": "0"
+  },
+  "result": {
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "reason": null,
+    "beta_outer": {
+      "exact": [
+        "4/5",
+        "4/5"
+      ],
+      "outward_float": [
+        0.7999999999999999,
+        0.8000000000000002
+      ]
+    },
+    "report_pole_outer": {
+      "exact": [
+        "3/5",
+        "3/5"
+      ],
+      "outward_float": [
+        0.5999999999999999,
+        0.6000000000000001
+      ]
+    },
+    "beta_width": 0.0,
+    "contract_validated": false,
+    "positive_model_feasibility_proved": false,
+    "enclosure_type": "certified outer enclosure of legal-model compatibility projection; not exact feasible set",
+    "coverage": "conditional on ALL raw errors lying simultaneously in the supplied box",
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 0.0,
+    "basis_rows": [
+      [
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        3,
+        7
+      ],
+      [
+        0,
+        2,
+        7
+      ],
+      [
+        2,
+        6,
+        8
+      ],
+      [
+        2,
+        3,
+        8
+      ],
+      [
+        0,
+        2,
+        8
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "rejected_equations": [],
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "rho_and_costs_assumed_known": true,
+    "nominal_smallest_singular_value": 0.02496184407885683,
+    "nominal_condition_number": 44.13227820489704,
+    "arithmetic": "exact rational through all certificate decisions; float basis ranking only"
+  }
+}

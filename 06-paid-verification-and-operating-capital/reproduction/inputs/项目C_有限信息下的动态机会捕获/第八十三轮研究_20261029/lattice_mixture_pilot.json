@@ -1,0 +1,93 @@
+{
+  "proposal_only": true,
+  "original_full_market_verification_pending": true,
+  "finite_candidates": 100,
+  "mixed_capital_proposal": 0.02682608581833051,
+  "selected": [
+    {
+      "index": 0,
+      "weight": 0.8788926883131395,
+      "candidate": {
+        "quotas": [
+          22,
+          2
+        ],
+        "positive_score_step": 11,
+        "H_error_score_penalty": 15,
+        "L_error_score_penalty": 23,
+        "evidence_base": 1.04754781528508,
+        "score_threshold": 203,
+        "good_score_drifts": [
+          7.616000000000001,
+          3.9081348314606736,
+          3.43418181818182
+        ],
+        "tail_delta": 0.018835799230316797,
+        "cohort_cap": 580,
+        "maximum_invoice": 0.0007424,
+        "mean_invoices": [
+          3.107031042313732e-05,
+          6.054844430589218e-05,
+          6.890476297143031e-05
+        ],
+        "cost_over_p": 55.54729675648214,
+        "capital_proposal": 0.02682636735633733,
+        "vertex_profits": [
+          0.10128433708365701,
+          0.10000118946414206,
+          0.09999999999999976
+        ]
+      },
+      "vertex_profits": [
+        0.10128335821803229,
+        0.10000022130404382,
+        0.09999903290439835
+      ]
+    },
+    {
+      "index": 2,
+      "weight": 0.12110731168686051,
+      "candidate": {
+        "quotas": [
+          22,
+          2
+        ],
+        "positive_score_step": 3,
+        "H_error_score_penalty": 4,
+        "L_error_score_penalty": 6,
+        "evidence_base": 1.17443039813211,
+        "score_threshold": 59,
+        "good_score_drifts": [
+          2.1,
+          1.1112359550561797,
+          1.0090909090909093
+        ],
+        "tail_delta": 0.077666713115555,
+        "cohort_cap": 486,
+        "maximum_invoice": 0.00062208,
+        "mean_invoices": [
+          3.2270334306146765e-05,
+          6.098407969483146e-05,
+          6.71571822046838e-05
+        ],
+        "cost_over_p": 55.54729675648214,
+        "capital_proposal": 0.026826552846777433,
+        "vertex_profits": [
+          0.10127966325555038,
+          0.09999999999999973,
+          0.10000862258084542
+        ]
+      },
+      "vertex_profits": [
+        0.10127803944962382,
+        0.09999839396562202,
+        0.10000701834795409
+      ]
+    }
+  ],
+  "dual_prices": [
+    0.0,
+    0.8137797796808697,
+    0.18622022031913027
+  ]
+}

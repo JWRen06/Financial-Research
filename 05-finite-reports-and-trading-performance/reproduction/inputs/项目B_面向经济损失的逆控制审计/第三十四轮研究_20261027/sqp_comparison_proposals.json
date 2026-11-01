@@ -1,0 +1,224 @@
+{
+  "scipy_version": "1.18.1",
+  "numpy_version": "2.3.5",
+  "sources": {
+    "B26_sha256": "5fce1e2aff490e6ecda8c7f863e27db78f05bac9f428e95414c2284de90f55d3",
+    "B16_sha256": "28ee7939e41326bda34157dc0db47af4147d62063dd911d5f2b6d1035c009fe9",
+    "reports_sha256": "b686feb18db722b6c2f3190541c64f1ac6468041d26268047317f5ac5ff04ad8"
+  },
+  "runs": [
+    {
+      "method": "SciPy SLSQP",
+      "nodes": 2,
+      "seed": 0,
+      "success": false,
+      "message": "Positive directional derivative for linesearch",
+      "iterations": 38,
+      "function_evaluations": 245,
+      "feasible_iterates_seen": 26,
+      "retained_value": 2.0343543304814206e-08,
+      "retained_max_scaled_report_residual": 0.9999918169564803,
+      "elapsed_seconds": 0.1559999999590218
+    },
+    {
+      "method": "SciPy SLSQP",
+      "nodes": 5,
+      "seed": 0,
+      "success": false,
+      "message": "Positive directional derivative for linesearch",
+      "iterations": 25,
+      "function_evaluations": 127,
+      "feasible_iterates_seen": 6,
+      "retained_value": 2.0343543301577144e-08,
+      "retained_max_scaled_report_residual": 0.9999962615782343,
+      "elapsed_seconds": 0.125
+    },
+    {
+      "method": "SciPy SLSQP",
+      "nodes": 5,
+      "seed": 1,
+      "success": false,
+      "message": "Iteration limit reached",
+      "iterations": 600,
+      "function_evaluations": 5106,
+      "feasible_iterates_seen": 455,
+      "retained_value": 2.0343543307433715e-08,
+      "retained_max_scaled_report_residual": 0.9999937373821044,
+      "elapsed_seconds": 3.297000000020489
+    },
+    {
+      "method": "SciPy SLSQP",
+      "nodes": 5,
+      "seed": 2,
+      "success": false,
+      "message": "Iteration limit reached",
+      "iterations": 600,
+      "function_evaluations": 5480,
+      "feasible_iterates_seen": 146,
+      "retained_value": 2.034354335621912e-08,
+      "retained_max_scaled_report_residual": 0.9999941972572979,
+      "elapsed_seconds": 3.26500000001397
+    },
+    {
+      "method": "SciPy SLSQP",
+      "nodes": 5,
+      "seed": 3,
+      "success": false,
+      "message": "Inequality constraints incompatible",
+      "iterations": 36,
+      "function_evaluations": 164,
+      "feasible_iterates_seen": 1,
+      "retained_value": 1.7896902659850815e-08,
+      "retained_max_scaled_report_residual": 0.951114747464038,
+      "elapsed_seconds": 0.15700000000651926
+    }
+  ],
+  "candidates": [
+    {
+      "beta": 0.9787345655657298,
+      "r": 0.5813955327205089,
+      "g": 0.4021395132720009,
+      "nodes": [
+        5.104113877392897e-15,
+        0.9898704723501668
+      ],
+      "weights": [
+        0.16204918232876606,
+        0.01042687905377814
+      ],
+      "initials": [
+        5.5649831599431497e-14,
+        0.01030436413486658,
+        0.00533642832729811,
+        0.010352183122825967
+      ],
+      "calibration_initials": [
+        0.010158682092648181,
+        0.010169999965599774
+      ],
+      "value": 2.0343543304814206e-08
+    },
+    {
+      "beta": 0.9787345655677285,
+      "r": 0.5813955327204072,
+      "g": 0.40213951327204156,
+      "nodes": [
+        1.8804953505408632e-17,
+        0.9898704723475872,
+        0.9898704723528624,
+        0.9898704723475873,
+        0.9898704723528626
+      ],
+      "weights": [
+        0.1620491823285193,
+        0.002606719763650113,
+        0.002606719763548084,
+        0.00260671976351349,
+        0.002606719763424132
+      ],
+      "initials": [
+        2.1145364904048743e-16,
+        0.01030436413486267,
+        0.00533642832732928,
+        0.010352183122842947
+      ],
+      "calibration_initials": [
+        0.010158682092674289,
+        0.010169999965600014
+      ],
+      "value": 2.0343543301577144e-08
+    },
+    {
+      "beta": 0.978734565564721,
+      "r": 0.5813955327236426,
+      "g": 0.4021395132695031,
+      "nodes": [
+        1.2875669111188907e-16,
+        0.9898705177036577,
+        0.9898704644461988,
+        0.9898704584172144,
+        0.9898704754051979
+      ],
+      "weights": [
+        0.1620491823287772,
+        0.0010428145632136777,
+        0.0020853409584623756,
+        0.0031279878750571618,
+        0.0041707356573334456
+      ],
+      "initials": [
+        4.445513391854454e-16,
+        0.010304364134862734,
+        0.005336428327320679,
+        0.01035218312284333
+      ],
+      "calibration_initials": [
+        0.010158682092661797,
+        0.010169999965595596
+      ],
+      "value": 2.0343543307433715e-08
+    },
+    {
+      "beta": 0.9787345655346271,
+      "r": 0.5813955327248137,
+      "g": 0.4021395132692557,
+      "nodes": [
+        3.905852171488286e-16,
+        0.9898688657406292,
+        0.9898713789374108,
+        0.9898718151065103,
+        0.9898714932660204
+      ],
+      "weights": [
+        0.16204918233357588,
+        0.004170780008190666,
+        0.0031283354451075696,
+        0.0020849793838155096,
+        0.0010427842185385576
+      ],
+      "initials": [
+        0.0,
+        0.010304364134861277,
+        0.005336428327307579,
+        0.010352183122842843
+      ],
+      "calibration_initials": [
+        0.010158682092640783,
+        0.010169999965595698
+      ],
+      "value": 2.034354335621912e-08
+    },
+    {
+      "beta": 0.9792,
+      "r": 0.6,
+      "g": 0.4,
+      "nodes": [
+        0.0,
+        0.98972,
+        0.99,
+        0.99,
+        0.99
+      ],
+      "weights": [
+        0.15542979032768947,
+        0.003623186359811744,
+        0.002127111339469671,
+        0.002127111339469671,
+        0.002127111339469671
+      ],
+      "initials": [
+        0.0,
+        0.010304209136718393,
+        0.005120935941791009,
+        0.010351992295093867
+      ],
+      "calibration_initials": [
+        0.00975,
+        0.010166666666666666
+      ],
+      "value": 1.7896902659850815e-08
+    }
+  ],
+  "verified_independently": false,
+  "scope": "Same raw twelve-report union; ordinary positive finite target, common unknown beta/r/g and six nonnegative initials. Numerical node cap 1-1e-10 restricts this search only. SLSQP is local; warm starts from B26 and B16, B26 representation splits are not independent physical starts. No SDP or global optimum claim."
+}

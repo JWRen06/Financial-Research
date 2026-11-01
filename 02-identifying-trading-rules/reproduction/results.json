@@ -1,0 +1,2051 @@
+[
+  {
+    "group": "noise",
+    "label": "1e-12",
+    "epsilon": "1e-12",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7579393436962977e-09,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.584917011204955e-09,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005197818345424356,
+    "nominal_condition_number": 22.846057505252222,
+    "beta_interval": [
+      0.7999999993213042,
+      0.8000000010792437
+    ],
+    "report_pole_interval": [
+      0.5999999971935792,
+      0.6000000043569987
+    ]
+  },
+  {
+    "group": "noise",
+    "label": "1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7579414350247073e-07,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.5849174129944784e-07,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.00519781805087793,
+    "nominal_condition_number": 22.846058813385763,
+    "beta_interval": [
+      0.7999999321303275,
+      0.8000001079244712
+    ],
+    "report_pole_interval": [
+      0.5999997193577679,
+      0.6000004357000366
+    ]
+  },
+  {
+    "group": "noise",
+    "label": "1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005197788596647679,
+    "nominal_condition_number": 22.84618962567634,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "noise",
+    "label": "1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0017793083395307129,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0045889788035879025,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005194847298938341,
+    "nominal_condition_number": 22.85926019552049,
+    "beta_interval": [
+      0.7993108301921251,
+      0.801090138531656
+    ],
+    "report_pole_interval": [
+      0.5971765910424365,
+      0.6043747958027168
+    ]
+  },
+  {
+    "group": "noise",
+    "label": "1e-4",
+    "epsilon": "1e-4",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.44359160851404283,
+    "contracting_bases": 5,
+    "minimum_contraction_bound": 0.5026862464234959,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.004944213338308911,
+    "nominal_condition_number": 24.03228006697086,
+    "beta_interval": [
+      0.5564083914859571,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      0.03254910816131755,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": "1:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "gap": "1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7579414350247073e-07,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.5849174129944784e-07,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.00519781805087793,
+    "nominal_condition_number": 22.846058813385763,
+    "beta_interval": [
+      0.7999999321303275,
+      0.8000001079244712
+    ],
+    "report_pole_interval": [
+      0.5999997193577679,
+      0.6000004357000366
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": "1:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "gap": "1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005197788596647679,
+    "nominal_condition_number": 22.84618962567634,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": "1:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "gap": "1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0017793083395307129,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0045889788035879025,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005194847298938341,
+    "nominal_condition_number": 22.85926019552049,
+    "beta_interval": [
+      0.7993108301921251,
+      0.801090138531656
+    ],
+    "report_pole_interval": [
+      0.5971765910424365,
+      0.6043747958027168
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".1:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "1.1"
+    ],
+    "gap": ".1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.3513118358270999e-06,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 2.2771608261076837e-06,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0008107235052602447,
+    "nominal_condition_number": 18.450624741994215,
+    "beta_interval": [
+      0.7999993668566137,
+      0.8000007181684496
+    ],
+    "report_pole_interval": [
+      0.599998489288073,
+      0.6000020012977859
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".1:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "1.1"
+    ],
+    "gap": ".1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.00013515633174348177,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.00022771848335274744,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.000810704364963633,
+    "nominal_condition_number": 18.451067872778175,
+    "beta_interval": [
+      0.7999366730212621,
+      0.8000718293530058
+    ],
+    "report_pole_interval": [
+      0.5998488940744454,
+      0.6002001640208258
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".1:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "1.1"
+    ],
+    "gap": ".1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.013771498001711506,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.02279580429683019,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0008087983577523434,
+    "nominal_condition_number": 18.49530369856936,
+    "beta_interval": [
+      0.793538710025954,
+      0.8073102080276657
+    ],
+    "report_pole_interval": [
+      0.5845364400716405,
+      0.6203644662141218
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".01:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "1.01"
+    ],
+    "gap": ".01",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.1461337942303111e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 2.09370625905001e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 8.562150917548595e-05,
+    "nominal_condition_number": 17.987317743259926,
+    "beta_interval": [
+      0.7999949433707808,
+      0.8000064047087233
+    ],
+    "report_pole_interval": [
+      0.5999861870849562,
+      0.6000181868089965
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".01:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "1.01"
+    ],
+    "gap": ".01",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.001148479276887621,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0020941310564546725,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 8.560921978623739e-05,
+    "nominal_condition_number": 17.989911964572904,
+    "beta_interval": [
+      0.799493181279092,
+      0.8006416605559799
+    ],
+    "report_pole_interval": [
+      0.5986153575650213,
+      0.6018234692337551
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".01:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "1.01"
+    ],
+    "gap": ".01",
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.14342843724430027,
+    "contracting_bases": 8,
+    "minimum_contraction_bound": 0.21375535975097615,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 8.439597841307432e-05,
+    "nominal_condition_number": 18.24976694062817,
+    "beta_interval": [
+      0.7352008426469734,
+      0.8786292798912739
+    ],
+    "report_pole_interval": [
+      0.4210602524425529,
+      0.828451786378072
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".001:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "1.001"
+    ],
+    "gap": ".001",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.00011265474590375805,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0002075822911624853,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 8.610099455317924e-06,
+    "nominal_condition_number": 17.940954521936415,
+    "beta_interval": [
+      0.7999484467625533,
+      0.8000611015084572
+    ],
+    "report_pole_interval": [
+      0.5998622094016614,
+      0.6001801924739812
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".001:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "1.001"
+    ],
+    "gap": ".001",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.01146197381775976,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.02076618245262888,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 8.597530784743253e-06,
+    "nominal_condition_number": 17.968402061333716,
+    "beta_interval": [
+      0.7947463806418887,
+      0.8062083544596487
+    ],
+    "report_pole_interval": [
+      0.5859178290760301,
+      0.6184399742846787
+    ]
+  },
+  {
+    "group": "cost_gap",
+    "label": ".001:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "1.001"
+    ],
+    "gap": ".001",
+    "status": "ABSTAIN_NO_CONTRACTION",
+    "decision": "ABSTAIN",
+    "beta_width": 1.0,
+    "contracting_bases": 0,
+    "minimum_contraction_bound": null,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 7.495259368615869e-06,
+    "nominal_condition_number": 20.75182463676066,
+    "beta_interval": [
+      -5e-324,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      -5e-324,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".8:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".8",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 8.43440340164125e-07,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 1.0704648713455483e-06,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0020953968731137816,
+    "nominal_condition_number": 42.9841726992714,
+    "beta_interval": [
+      0.7999996626847751,
+      0.8000005061251155
+    ],
+    "report_pole_interval": [
+      0.599999381602587,
+      0.6000009173557304
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".8:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".8",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 8.435589650821851e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.00010704939596447505,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.002095363154510453,
+    "nominal_condition_number": 42.98486637595543,
+    "beta_interval": [
+      0.799966261879292,
+      0.8000506177758004
+    ],
+    "report_pole_interval": [
+      0.5999381479410356,
+      0.600091745381733
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".8:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".8",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.008555620610516495,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.01073410837899985,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.002092001948919157,
+    "nominal_condition_number": 43.054127699598276,
+    "beta_interval": [
+      0.7965593832363002,
+      0.8051150038468169
+    ],
+    "report_pole_interval": [
+      0.593690070924789,
+      0.6092737231251443
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".95:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".95",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 5.442525670554763e-06,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 6.604884712635575e-06,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.00035857183440590144,
+    "nominal_condition_number": 88.8948709868442,
+    "beta_interval": [
+      0.7999979205065758,
+      0.8000033630322466
+    ],
+    "report_pole_interval": [
+      0.5999968278803087,
+      0.6000051672444977
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".95:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".95",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0005447465061311949,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0006606036990355112,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0003585340917548781,
+    "nominal_condition_number": 88.90423840460694,
+    "beta_interval": [
+      0.799791796337997,
+      0.8003365428441285
+    ],
+    "report_pole_interval": [
+      0.5996823957142297,
+      0.6005170938455664
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".95:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".95",
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.059809213584480526,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.06723335623192174,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.00035482165668530364,
+    "nominal_condition_number": 89.8353888300625,
+    "beta_interval": [
+      0.7764300454004295,
+      0.8362392589849102
+    ],
+    "report_pole_interval": [
+      0.563996906309017,
+      0.6556962286582375
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".99:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".99",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 3.488462726795933e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.011617977059184e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.940085142761994e-05,
+    "nominal_condition_number": 118.86761305299628,
+    "beta_interval": [
+      0.7999873656961479,
+      0.8000222503234161
+    ],
+    "report_pole_interval": [
+      0.5999817393281226,
+      0.6000324388466945
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".99:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".99",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0035084560992166935,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.00401590745420415,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.936150265200111e-05,
+    "nominal_condition_number": 118.94646186351889,
+    "beta_interval": [
+      0.798727121845026,
+      0.8022355779442429
+    ],
+    "report_pole_interval": [
+      0.5981601528079985,
+      0.6032592856667391
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".99:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".99",
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.49587453736301446,
+    "contracting_bases": 5,
+    "minimum_contraction_bound": 0.4496814590534717,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.581418399707103e-05,
+    "nominal_condition_number": 126.51210557199609,
+    "beta_interval": [
+      0.5041254626369854,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      0.1698125150665033,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".999:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".999",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.00037451080046606425,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0004227341208642467,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.643784130395083e-06,
+    "nominal_condition_number": 128.08941209141494,
+    "beta_interval": [
+      0.7998667694939088,
+      0.800241280294375
+    ],
+    "report_pole_interval": [
+      0.5998098207509577,
+      0.6003479386852514
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".999:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".999",
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.039608391170790215,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 0.04275547968998655,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.604368903973164e-06,
+    "nominal_condition_number": 128.99084092788138,
+    "beta_interval": [
+      0.7855789121568174,
+      0.8251873033276078
+    ],
+    "report_pole_interval": [
+      0.5794009628533808,
+      0.6366767656504511
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".999:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".999",
+    "status": "ABSTAIN_NO_CONTRACTION",
+    "decision": "ABSTAIN",
+    "beta_width": 1.0,
+    "contracting_bases": 0,
+    "minimum_contraction_bound": null,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 6.7734914143598145e-06,
+    "nominal_condition_number": 106.77540979132404,
+    "beta_interval": [
+      -5e-324,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      -5e-324,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".9999:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".9999",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0037807240891934283,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.004254787139184204,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.610236602097536e-07,
+    "nominal_condition_number": 129.16066939018458,
+    "beta_interval": [
+      0.7986507557477592,
+      0.8024314798369528
+    ],
+    "report_pole_interval": [
+      0.5980763192130024,
+      0.603522059813372
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".9999:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".9999",
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.5271327349809513,
+    "contracting_bases": 5,
+    "minimum_contraction_bound": 0.4799628702920669,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 5.253136673169787e-07,
+    "nominal_condition_number": 137.94702763343824,
+    "beta_interval": [
+      0.47286726501904863,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      0.13798792542171304,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "slow_target",
+    "label": ".9999:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "persistence": ".9999",
+    "status": "ABSTAIN_NO_CONTRACTION",
+    "decision": "ABSTAIN",
+    "beta_width": 1.0,
+    "contracting_bases": 0,
+    "minimum_contraction_bound": null,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 7.323814700704617e-06,
+    "nominal_condition_number": 9.943933289440796,
+    "beta_interval": [
+      -5e-324,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      -5e-324,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "report_memory",
+    "label": ".1",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "pole": ".1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 2.611288859320255e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.556698250688247e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0056116021151476625,
+    "nominal_condition_number": 13.097484355678356,
+    "beta_interval": [
+      0.7999855071927807,
+      0.8000116200813742
+    ],
+    "report_pole_interval": [
+      0.0999852069683968,
+      0.10002623186168993
+    ]
+  },
+  {
+    "group": "report_memory",
+    "label": ".6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "pole": ".6",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005197788596647679,
+    "nominal_condition_number": 22.84618962567634,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "report_memory",
+    "label": ".9",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "pole": ".9",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 3.606269807297603e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 5.836037129440947e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0043813686999007555,
+    "nominal_condition_number": 43.84670330972743,
+    "beta_interval": [
+      0.7999862490246741,
+      0.8000223117227473
+    ],
+    "report_pole_interval": [
+      0.8999591251247336,
+      0.9000541997546079
+    ]
+  },
+  {
+    "group": "report_memory",
+    "label": ".99",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "pole": ".99",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 3.792180654904127e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 6.393837912637562e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.004070024703167572,
+    "nominal_condition_number": 56.65189556456018,
+    "beta_interval": [
+      0.7999859270138044,
+      0.8000238488203537
+    ],
+    "report_pole_interval": [
+      0.989954088713479,
+      0.9900600995348364
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "2x6:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7579414350247073e-07,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.5849174129944784e-07,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.00519781805087793,
+    "nominal_condition_number": 22.846058813385763,
+    "beta_interval": [
+      0.7999999321303275,
+      0.8000001079244712
+    ],
+    "report_pole_interval": [
+      0.5999997193577679,
+      0.6000004357000366
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "3x4:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.945839931230044e-07,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 5.872900480501559e-07,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.004627029193596271,
+    "nominal_condition_number": 64.64885069494943,
+    "beta_interval": [
+      0.7999997504271092,
+      0.8000002450111027
+    ],
+    "report_pole_interval": [
+      0.5999995175966277,
+      0.600000486418568
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "3x6:1e-10",
+    "epsilon": "1e-10",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7579414350247073e-07,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.5849174129944784e-07,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.010956778153245257,
+    "nominal_condition_number": 28.85170448222538,
+    "beta_interval": [
+      0.7999999321303275,
+      0.8000001079244712
+    ],
+    "report_pole_interval": [
+      0.5999997193577679,
+      0.6000004357000366
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "2x6:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005197788596647679,
+    "nominal_condition_number": 22.84618962567634,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "3x4:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.9460617370520385e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 5.872895524763226e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.004627032499551618,
+    "nominal_condition_number": 64.64879878494338,
+    "beta_interval": [
+      0.7999750416007331,
+      0.8000245022181037
+    ],
+    "report_pole_interval": [
+      0.5999517575306053,
+      0.6000486439823158
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "3x6:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.010956822542162679,
+    "nominal_condition_number": 28.851585823670195,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "2x6:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0017793083395307129,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 0.0045889788035879025,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005194847298938341,
+    "nominal_condition_number": 22.85926019552049,
+    "beta_interval": [
+      0.7993108301921251,
+      0.801090138531656
+    ],
+    "report_pole_interval": [
+      0.5971765910424365,
+      0.6043747958027168
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "3x4:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.004968342887099824,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 0.005872399891153601,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.0046273728705700816,
+    "nominal_condition_number": 64.64347160438346,
+    "beta_interval": [
+      0.7974930077140753,
+      0.8024613506011753
+    ],
+    "report_pole_interval": [
+      0.5951543346295521,
+      0.6048857502078349
+    ]
+  },
+  {
+    "group": "third_cost",
+    "label": "3x6:1e-6",
+    "epsilon": "1e-6",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 0.0017793083395307129,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 0.0045889788035879025,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.010961270159777105,
+    "nominal_condition_number": 28.839701867094664,
+    "beta_interval": [
+      0.7993108301921251,
+      0.801090138531656
+    ],
+    "report_pole_interval": [
+      0.5971765910424365,
+      0.6043747958027168
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".05:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".05"
+    ],
+    "third_cost": ".05",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 5.925867660225764e-06,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 1.2031211128366004e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.013541197190875211,
+    "nominal_condition_number": 32.710369769455816,
+    "beta_interval": [
+      0.7999976938752585,
+      0.800003619742919
+    ],
+    "report_pole_interval": [
+      0.599992458924017,
+      0.6000109110658939
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".05:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".05"
+    ],
+    "third_cost": ".05",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.7354964327137426e-06,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 6.9440997041891856e-06,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.030204403623168726,
+    "nominal_condition_number": 14.771021728059472,
+    "beta_interval": [
+      0.7999980001372212,
+      0.8000027356336541
+    ],
+    "report_pole_interval": [
+      0.5999935892284496,
+      0.6000037019088911
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".1:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".1"
+    ],
+    "third_cost": ".1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 7.068984032651902e-06,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 1.3992451939917736e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.012037391386570602,
+    "nominal_condition_number": 34.309465606796394,
+    "beta_interval": [
+      0.7999970509103361,
+      0.800004119894369
+    ],
+    "report_pole_interval": [
+      0.599991374255364,
+      0.6000123326058112
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".1:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".1"
+    ],
+    "third_cost": ".1",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.544815441214324e-06,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 8.295286889684124e-06,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.027390611641130554,
+    "nominal_condition_number": 15.200937765797336,
+    "beta_interval": [
+      0.7999978314504509,
+      0.8000023762658923
+    ],
+    "report_pole_interval": [
+      0.5999935002307963,
+      0.6000050364697437
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".25:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".25"
+    ],
+    "third_cost": ".25",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.1876238845753494e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 2.091774532022789e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.008713681899869381,
+    "nominal_condition_number": 39.11450911749485,
+    "beta_interval": [
+      0.7999959523349768,
+      0.8000078285738228
+    ],
+    "report_pole_interval": [
+      0.5999896760295131,
+      0.6000210685194443
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".25:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".25"
+    ],
+    "third_cost": ".25",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.983985888754995e-06,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 1.2807753715332395e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.02084261782937798,
+    "nominal_condition_number": 16.535700592154477,
+    "beta_interval": [
+      0.7999974757260155,
+      0.8000024597119045
+    ],
+    "report_pole_interval": [
+      0.5999928148255996,
+      0.6000072232451861
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".5:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".5"
+    ],
+    "third_cost": ".5",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 2.327914641020227e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 3.4618960821881374e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.005277956144396465,
+    "nominal_condition_number": 48.5708547698186,
+    "beta_interval": [
+      0.7999914514532745,
+      0.800014730599685
+    ],
+    "report_pole_interval": [
+      0.5999805132864683,
+      0.6000320386299268
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": ".5:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      ".5"
+    ],
+    "third_cost": ".5",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 7.756244798552377e-06,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 2.7164366023018727e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.013794246440258952,
+    "nominal_condition_number": 18.904096138979707,
+    "beta_interval": [
+      0.799995651545705,
+      0.8000034077905037
+    ],
+    "report_pole_interval": [
+      0.5999877703782638,
+      0.6000102445452733
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "1.5:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "1.5"
+    ],
+    "third_cost": "1.5",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 9.166517726677074e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 0.00011550207322377088,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.0021644323358692426,
+    "nominal_condition_number": 65.55590718118107,
+    "beta_interval": [
+      0.7999659849070968,
+      0.8000576500843638
+    ],
+    "report_pole_interval": [
+      0.5999300547512376,
+      0.60012302117911
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "1.5:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "1.5"
+    ],
+    "third_cost": "1.5",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.006506029638227684,
+    "nominal_condition_number": 22.421272652702154,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "3:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "3"
+    ],
+    "third_cost": "3",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 7.250609015842647e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 8.543357752278893e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.0034553536048846376,
+    "nominal_condition_number": 67.82807391202564,
+    "beta_interval": [
+      0.7999741240310916,
+      0.8000466301212502
+    ],
+    "report_pole_interval": [
+      0.5999497114741328,
+      0.6000961375088182
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "3:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "3"
+    ],
+    "third_cost": "3",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.009447429563353529,
+    "nominal_condition_number": 25.84064451257938,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "4:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "third_cost": "4",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.9460617370520385e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 5.872895524763226e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.004627032499551618,
+    "nominal_condition_number": 64.64879878494338,
+    "beta_interval": [
+      0.7999750416007331,
+      0.8000245022181037
+    ],
+    "report_pole_interval": [
+      0.5999517575306053,
+      0.6000486439823158
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "4:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "4"
+    ],
+    "third_cost": "4",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.584957592274893e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.010956822542162679,
+    "nominal_condition_number": 28.851585823670195,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "8:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "8"
+    ],
+    "third_cost": "8",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 4.224906182923438e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 4.6490214541625226e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.007240985810349499,
+    "nominal_condition_number": 64.7190322867464,
+    "beta_interval": [
+      0.7999797758957032,
+      0.8000220249575327
+    ],
+    "report_pole_interval": [
+      0.5999585706447165,
+      0.6000442537815033
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "8:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "8"
+    ],
+    "third_cost": "8",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.350893004185827e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.013569990842844925,
+    "nominal_condition_number": 37.995845228923734,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999735475225522,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "20:4",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "20"
+    ],
+    "third_cost": "20",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 5.032419901537924e-05,
+    "contracting_bases": 9,
+    "minimum_contraction_bound": 5.3378629355629104e-05,
+    "readings": [
+      4,
+      4,
+      4
+    ],
+    "nominal_smallest_singular_value": 0.009805961342178012,
+    "nominal_condition_number": 68.99008840191217,
+    "beta_interval": [
+      0.7999777191358053,
+      0.8000280433348209
+    ],
+    "report_pole_interval": [
+      0.5999541636037857,
+      0.6000485405648661
+    ]
+  },
+  {
+    "group": "third_cost_scan",
+    "label": "20:6",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2",
+      "20"
+    ],
+    "third_cost": "20",
+    "status": "CONDITIONAL_INTERVAL",
+    "decision": "ABOVE_THRESHOLD_CONDITIONAL",
+    "beta_width": 1.7581505918166603e-05,
+    "contracting_bases": 18,
+    "minimum_contraction_bound": 4.5206262967700594e-05,
+    "readings": [
+      6,
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.015208299179515838,
+    "nominal_condition_number": 51.56554419483391,
+    "beta_interval": [
+      0.7999932120077735,
+      0.800010793513692
+    ],
+    "report_pole_interval": [
+      0.5999719341020836,
+      0.6000435717583845
+    ]
+  },
+  {
+    "group": "misspecification",
+    "label": "different_poles:1e-12",
+    "epsilon": "1e-12",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "fault": "different_poles",
+    "counted_as_recovery_success": false,
+    "status": "MODEL_INCOMPATIBLE",
+    "decision": "ABSTAIN",
+    "beta_width": null,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 8.682212953909567e-09,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0025813468886794503,
+    "nominal_condition_number": 47.16415723771163,
+    "beta_interval": null,
+    "report_pole_interval": null
+  },
+  {
+    "group": "misspecification",
+    "label": "different_poles:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "fault": "different_poles",
+    "counted_as_recovery_success": false,
+    "status": "MODEL_INCOMPATIBLE",
+    "decision": "ABSTAIN",
+    "beta_width": null,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 8.682360842041406e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0025813234719501456,
+    "nominal_condition_number": 47.164587837872475,
+    "beta_interval": null,
+    "report_pole_interval": null
+  },
+  {
+    "group": "misspecification",
+    "label": "different_poles:1e-4",
+    "epsilon": "1e-4",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "fault": "different_poles",
+    "counted_as_recovery_success": false,
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 1.0,
+    "contracting_bases": 1,
+    "minimum_contraction_bound": 0.9936138592632824,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.0024449318678056004,
+    "nominal_condition_number": 49.82473139989739,
+    "beta_interval": [
+      -5e-324,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      -5e-324,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "misspecification",
+    "label": "two_poles:1e-12",
+    "epsilon": "1e-12",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "fault": "two_poles",
+    "counted_as_recovery_success": false,
+    "status": "MODEL_INCOMPATIBLE",
+    "decision": "ABSTAIN",
+    "beta_width": null,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.5713257151547045e-09,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005209037692806774,
+    "nominal_condition_number": 22.6015611355536,
+    "beta_interval": null,
+    "report_pole_interval": null
+  },
+  {
+    "group": "misspecification",
+    "label": "two_poles:1e-8",
+    "epsilon": "1e-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "fault": "two_poles",
+    "counted_as_recovery_success": false,
+    "status": "MODEL_INCOMPATIBLE",
+    "decision": "ABSTAIN",
+    "beta_width": null,
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.571366115422417e-05,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.005209007737806815,
+    "nominal_condition_number": 22.601692483402257,
+    "beta_interval": null,
+    "report_pole_interval": null
+  },
+  {
+    "group": "misspecification",
+    "label": "two_poles:1e-4",
+    "epsilon": "1e-4",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "fault": "two_poles",
+    "counted_as_recovery_success": false,
+    "status": "ABSTAIN_WIDE_INTERVAL",
+    "decision": "ABSTAIN",
+    "beta_width": 0.44230415442395327,
+    "contracting_bases": 5,
+    "minimum_contraction_bound": 0.501120153903894,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 0.004953246311513084,
+    "nominal_condition_number": 23.783221008973936,
+    "beta_interval": [
+      0.5576958455760466,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      0.02789810618794624,
+      1.0000000000000002
+    ]
+  },
+  {
+    "group": "indistinguishable",
+    "label": "midpoint_two_legal_worlds",
+    "epsilon": "5.0440852242078537485006928201023980783053244108831750175626464265E-8",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "true_betas": [
+      ".6",
+      ".85"
+    ],
+    "status": "ABSTAIN_NO_CONTRACTION",
+    "decision": "ABSTAIN",
+    "beta_width": 1.0,
+    "contracting_bases": 0,
+    "minimum_contraction_bound": null,
+    "readings": [
+      6,
+      6
+    ],
+    "nominal_smallest_singular_value": 7.079171235118251e-09,
+    "nominal_condition_number": 101.34240894068526,
+    "beta_interval": [
+      -5e-324,
+      1.0000000000000002
+    ],
+    "report_pole_interval": [
+      -5e-324,
+      1.0000000000000002
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "source_sha256": "966d6d6c9aab52d764e091daa4a8dd177fdd78f4f3c87cc05b0034f584417d06",
+  "verification_code_sha256": "37f5f4e3a07d633c634c41d761d8f7f56a34272ff2450cd32afe9a3ea3592f07",
+  "independent_math": "rational exponential and logarithm enclosures from A52 verifier",
+  "same_point_good_and_strict_bad_information_contract_preserved": true,
+  "affine_cash_generator_identities_checked": true,
+  "all_cash_rates_0_through_rho_covered_analytically": true,
+  "ordinary_and_actual_capture_uniform_value_bounds_checked": true,
+  "alpha_target_threshold_interval_checked": true,
+  "distinct_alpha_sensitivity_contracts_checked": 2,
+  "original_point_one_target_excluded": false,
+  "higher_target_101_over_1000_excluded_for_all_rates": true,
+  "new_sufficient_policies": 0,
+  "original_critical_positive_rate_and_point_one_rate_records_changed": false,
+  "upper_relaxation_attainability_or_true_optimality_proved": false
+}

@@ -1,0 +1,11 @@
+{
+  "jobs": [
+    "项目A_现金约束下的主动学习与可靠停止/第六十三轮研究_20261029/verify_ordinary_target_reserve.py",
+    "项目A_现金约束下的主动学习与可靠停止/第六十轮研究_20261028/verify_action_boundary_evidence_value.py",
+    "项目A_现金约束下的主动学习与可靠停止/第六十四轮研究_20261029/verify_capture_target_approach.py",
+    "项目A_现金约束下的主动学习与可靠停止/第五十四轮研究_20261028/verify_cash_rate_bracket.py",
+    "项目A_现金约束下的主动学习与可靠停止/第六十一轮研究_20261029/verify_positive_cash_rate_point0875.py"
+  ],
+  "input_root": "inputs",
+  "group": "A"
+}

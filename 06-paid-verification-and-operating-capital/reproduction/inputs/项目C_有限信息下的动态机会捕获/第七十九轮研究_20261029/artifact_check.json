@@ -1,0 +1,22 @@
+{
+  "source_sha256": "a6eb4b1fa3b153139f35619e740f0adaac7427b975759105248f9eec35b722c9",
+  "original_full_market_complete_policies_checked": 7,
+  "controller_templates": 1,
+  "bad_all_error_pairs_covered_by_concave_log_product": true,
+  "bad_boundary_endpoint_stationary_values_checked": 3,
+  "good_all_error_pairs_moment_cover": true,
+  "good_moment_endpoint_stationary_values_checked": 2,
+  "positive_affine_good_drift_vertex_lowers_checked": 3,
+  "procurement_conditional_fee_inequalities_checked": 88,
+  "procurement_boundary_values_checked": 25,
+  "Ville_alpha_and_full_good_cap_beta_proved_analytically": true,
+  "whole_good_financial_triangle_covered_by_concavity_not_grid": true,
+  "no_invoice_error_accept_independence_used": true,
+  "all_path_cash_and_full_profit_roots_checked": 7,
+  "all_r_excess_ratio_rationally_below": "3.745",
+  "r_at_least_one_excess_ratio_rationally_below": "1.201",
+  "all_r_excess_ratio_maximum_display": 3.7442982559621436,
+  "r_at_least_one_excess_ratio_maximum_display": 1.200607000435361,
+  "all_r_primal_and_conditional_necessity_scopes_separated": true,
+  "all_resource_improvement_or_global_optimum_claimed": false
+}

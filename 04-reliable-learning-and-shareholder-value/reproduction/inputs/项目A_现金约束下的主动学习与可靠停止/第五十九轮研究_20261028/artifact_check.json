@@ -1,0 +1,16 @@
+{
+  "source_sha256": "eac71bcf7e08817fe83e7f5a10896aad4dc8e44b6fef40fa6c143fb0938054dd",
+  "post_business_continuous_cash_certificates_checked": 7,
+  "exact_generator_endpoint_inequalities_checked": 260000,
+  "constant_tail_inequalities_checked": 14,
+  "ordinary_and_qualified_information_value_bounds_checked": 7,
+  "listed_point_one_exclusions_per_qualification": 5,
+  "failed_solver_proposals_kept_separate": 2,
+  "same_A58_fixed_world_information_coupling_preserved": true,
+  "all_lower_cash_rates_covered_by_monotone_cash_potential_proof": true,
+  "target_point_one_necessary_cash_rate_ratio_strictly_above": "3999/4000",
+  "arbitrary_equity_deadline_capacity_controls_covered_analytically": true,
+  "numerical_grid_is_comparison_function_not_policy_cash_restriction": true,
+  "upper_above_target_not_feasibility_and_no_true_rate_bracket_claimed": true,
+  "new_sufficient_policies": 0
+}

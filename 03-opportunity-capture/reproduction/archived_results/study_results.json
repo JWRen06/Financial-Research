@@ -1,0 +1,215 @@
+{
+  "synthetic": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "baseline": {
+    "K": 100,
+    "fast_count": 8,
+    "slow_speed": 0.013999999999999999,
+    "fast_speed": 0.9,
+    "cost": 0.8,
+    "readings": [
+      6.026468649891912,
+      9.217879148512594,
+      11.246336085413423
+    ],
+    "robust_action": 4.534204048821128,
+    "guaranteed_profit": 9.391792241177628,
+    "minimum_mass": 14.784428817831829
+  },
+  "decision_table": [
+    {
+      "Q": 3.0,
+      "robust_action": 3.0,
+      "guaranteed_profit": 8.846336085413425,
+      "upper_profit": 8.846336085413425,
+      "true_profit_at_robust_action": 8.846336085413423,
+      "optimistic_action": 3.0
+    },
+    {
+      "Q": 5.0,
+      "robust_action": 4.534204048821128,
+      "guaranteed_profit": 9.391792241177628,
+      "upper_profit": 10.130896596346833,
+      "true_profit_at_robust_action": 9.896038488814108,
+      "optimistic_action": 5.0
+    },
+    {
+      "Q": 10.0,
+      "robust_action": 4.534204048821128,
+      "guaranteed_profit": 9.391792241177628,
+      "upper_profit": 12.018055064877196,
+      "true_profit_at_robust_action": 9.896038488814108,
+      "optimistic_action": 10.0
+    },
+    {
+      "Q": 20.0,
+      "robust_action": 4.534204048821128,
+      "guaranteed_profit": 9.391792241177628,
+      "upper_profit": 14.467895664233478,
+      "true_profit_at_robust_action": 9.896038488814108,
+      "optimistic_action": 20.0
+    },
+    {
+      "Q": 40.0,
+      "robust_action": 4.534204048821128,
+      "guaranteed_profit": 9.391792241177628,
+      "upper_profit": 15.643761200207017,
+      "true_profit_at_robust_action": 9.896038488814108,
+      "optimistic_action": 34.01672707120207
+    },
+    {
+      "Q": 80.0,
+      "robust_action": 4.534204048821128,
+      "guaranteed_profit": 9.391792241177628,
+      "upper_profit": 15.643761200207017,
+      "true_profit_at_robust_action": 9.896038488814108,
+      "optimistic_action": 34.01672707120207
+    },
+    {
+      "Q": 160.0,
+      "robust_action": 4.534204048821128,
+      "guaranteed_profit": 9.391792241177628,
+      "upper_profit": 15.643761200207017,
+      "true_profit_at_robust_action": 9.896038488814108,
+      "optimistic_action": 34.01672707120207
+    }
+  ],
+  "arbitrary_continuous_design": [
+    {
+      "test_intensities": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "grid_nodes": 506,
+      "approximate_robust_action": 4.534203719499379,
+      "approximate_guarantee": 9.391792241177601,
+      "approximate_upper_at_q20": 14.467895664233513,
+      "discretization_only_not_uniform_certificate": true
+    },
+    {
+      "test_intensities": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "grid_nodes": 2006,
+      "approximate_robust_action": 4.534204400033076,
+      "approximate_guarantee": 9.391792485349455,
+      "approximate_upper_at_q20": 14.467895664233392,
+      "discretization_only_not_uniform_certificate": true
+    },
+    {
+      "test_intensities": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "grid_nodes": 8006,
+      "approximate_robust_action": 4.534204400061755,
+      "approximate_guarantee": 9.391792485349459,
+      "approximate_upper_at_q20": 14.467895056569088,
+      "discretization_only_not_uniform_certificate": true
+    },
+    {
+      "test_intensities": [
+        0.75,
+        1.8,
+        3.0
+      ],
+      "grid_nodes": 506,
+      "approximate_robust_action": 4.381509413073893,
+      "approximate_guarantee": 9.31399772249895,
+      "approximate_upper_at_q20": 14.46789566423362,
+      "discretization_only_not_uniform_certificate": true
+    },
+    {
+      "test_intensities": [
+        0.75,
+        1.8,
+        3.0
+      ],
+      "grid_nodes": 2006,
+      "approximate_robust_action": 4.381501107762172,
+      "approximate_guarantee": 9.313994653951077,
+      "approximate_upper_at_q20": 14.467895664233339,
+      "discretization_only_not_uniform_certificate": true
+    },
+    {
+      "test_intensities": [
+        0.75,
+        1.8,
+        3.0
+      ],
+      "grid_nodes": 8006,
+      "approximate_robust_action": 4.3815006832966175,
+      "approximate_guarantee": 9.313994497000149,
+      "approximate_upper_at_q20": 14.467895664233339,
+      "discretization_only_not_uniform_certificate": true
+    }
+  ],
+  "native_action_summary": [
+    {
+      "K": 100,
+      "Q": 20,
+      "paths": 1200,
+      "median_records": 393216.0,
+      "median_action": 4.644759798803488,
+      "max_actual_loss": 0.0032626274609626194,
+      "joint_successes": 1200
+    },
+    {
+      "K": 100,
+      "Q": 80,
+      "paths": 1200,
+      "median_records": 393216.0,
+      "median_action": 4.648307878953666,
+      "max_actual_loss": 0.0026582903659164714,
+      "joint_successes": 1200
+    },
+    {
+      "K": 400,
+      "Q": 20,
+      "paths": 1200,
+      "median_records": 393216.0,
+      "median_action": 4.905481143346725,
+      "max_actual_loss": 0.003209231063387108,
+      "joint_successes": 1200
+    },
+    {
+      "K": 400,
+      "Q": 80,
+      "paths": 1200,
+      "median_records": 393216.0,
+      "median_action": 4.909350387667565,
+      "max_actual_loss": 0.0029601467413336024,
+      "joint_successes": 1200
+    },
+    {
+      "K": 1600,
+      "Q": 20,
+      "paths": 1200,
+      "median_records": 393216.0,
+      "median_action": 4.985144079242686,
+      "max_actual_loss": 0.0028836332686026367,
+      "joint_successes": 1200
+    },
+    {
+      "K": 1600,
+      "Q": 80,
+      "paths": 1200,
+      "median_records": 393216.0,
+      "median_action": 4.980728354348994,
+      "max_actual_loss": 0.0031902683048166125,
+      "joint_successes": 1200
+    }
+  ],
+  "native_total_paths": 7200,
+  "native_total_success": 7200,
+  "joint_group_success_lower_bound": 0.9853924802379541,
+  "seconds": 11.970789099810645,
+  "data_source": "fresh local_rerun/experiments/application_contract_bridge.json"
+}

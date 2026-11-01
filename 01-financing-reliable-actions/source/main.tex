@@ -1,0 +1,36 @@
+\documentclass[UTF8,fontset=windows,11pt,a4paper]{ctexart}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,geometry}
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{hyperref}
+\setmonofont{Consolas}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\geometry{left=27mm,right=27mm,top=25mm,bottom=25mm}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue,pdftitle={可靠行动的融资代价：反馈信息、启动资金与完成期限}}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.18}
+\pagestyle{plain}
+\makeatletter
+\renewcommand{\@maketitle}{\newpage\null\vskip0em\begin{center}{\LARGE\heiti\@title\par}\vskip1em{\normalsize\@date\par}\end{center}\par\vskip0.7em}
+\setlength{\@fptop}{0pt}\setlength{\@fpsep}{16pt}\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+\ctexset{section={format=\large\bfseries},subsection={format=\normalsize\bfseries}}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\renewcommand{\proofname}{证明}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\KL}{\operatorname{KL}}
+\newcommand{\TV}{\operatorname{TV}}
+\newcommand{\F}{\mathcal F}
+\begin{document}
+\title{可靠行动的融资代价：\\反馈信息、启动资金与完成期限}
+\author{}\date{2026年10月31日}
+\maketitle
+\input{body}
+\clearpage\appendix
+\numberwithin{equation}{section}
+\input{appendices}
+\end{document}

@@ -1,0 +1,29 @@
+{
+  "source_sha256": "d81bdab8335273c7d59cafecc2cb8abd203626da985314cdfc23ddf8dde26df2",
+  "rational_piecewise_cash_potentials_checked": 3,
+  "active_post_capture_endpoint_inequalities_checked": 18000,
+  "idle_endpoint_inequalities_checked": 18000,
+  "coupled_first_capture_endpoint_inequalities_checked": 6033,
+  "linear_half_axis_tails_checked": 6,
+  "original_larger_gap_parameter_point": true,
+  "selected_fixed_good_market_second_moment_checked": true,
+  "covered_cash_rate_fraction_upper": "2/25",
+  "continuum_of_smaller_cash_rates_proved_by_monotonicity": true,
+  "finite_hard_capture_policies_strict_negative_worst_good_value_proved_analytically": true,
+  "positive_cash_rate_zero_supremum_nonattainment_proved_analytically": true,
+  "quarter_to_full_rate_positive_interval_from_A48_proved_by_cash_account_dominance": true,
+  "critical_positive_value_cash_rate_fraction_bracket": [
+    "2/25",
+    "1/4"
+  ],
+  "fixed_certificate_deadline_uniform_negative_bound_proved_analytically": true,
+  "same_full_alpha_beta_fee_and_once_equity_contract_preserved": true,
+  "paid_sealed_learning_relaxed_favorably_with_no_prior_capture_business": true,
+  "piecewise_affine_grid_endpoints_cover_continuous_cash_not_only_grid_policies": true,
+  "LP_infeasibility_claimed_policy_impossibility": false,
+  "exact_interest_frontier_claimed": false,
+  "positive_A48_quarter_rate_policies_reversed": false,
+  "ordinary_unsupported_certificate_class_claimed_negative": false,
+  "zero_cash_rate_supremum_claimed_zero": false,
+  "external_optimal_dividend_theorem_silently_applied": false
+}

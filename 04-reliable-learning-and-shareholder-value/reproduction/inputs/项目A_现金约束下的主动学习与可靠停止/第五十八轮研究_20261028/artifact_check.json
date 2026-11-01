@@ -1,0 +1,17 @@
+{
+  "source_sha256": "117b58e52a72f63998d84afef0ced0d899899235e32201fed3a91e196c84b7ee",
+  "same_fixed_point_good_bad_worlds_checked": true,
+  "post_business_cash_generator_endpoint_inequalities_checked": 71600,
+  "post_business_constant_tail_inequalities_checked": 14,
+  "ordinary_and_capture_qualified_value_bounds_checked": 7,
+  "old_A34_formula_strict_improvements": 7,
+  "new_listed_target_exclusions_over_recomputed_A34_formula": 4,
+  "new_listed_qualified_target_exclusions_over_previous_min": 4,
+  "information_and_qualification_discounted_capture_coupling_proved_analytically": true,
+  "crossing_root_and_negative_conjugate_derivatives_checked": true,
+  "all_cash_rate_range_target_point_one_excluded_up_to": "19/20",
+  "all_equities_finite_deadlines_capacities_private_randomization_covered_analytically": true,
+  "source_prequalification_H_or_different_good_worlds_not_combined": true,
+  "new_sufficient_policies": 0,
+  "exact_critical_rate_or_new_positive_task_impossibility_claimed": false
+}

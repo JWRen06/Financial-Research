@@ -1,0 +1,105 @@
+{
+  "input": {
+    "rho": "1",
+    "costs": [
+      "1",
+      "2"
+    ],
+    "reports": [
+      [
+        "0.08929098424645674522706688784060787814323523726344293897753595567047148",
+        "0.1229666704906403584171639161957748599481665463288843286127156057302809",
+        "0.1199499889715710785734104959652031801065950765528816124632203503759175",
+        "0.1019276687310321570020975624752208770883605192882007134607174263322140",
+        "0.08083570055978013571239869343106318694591006326668295632172223181914483",
+        "0.06181200461248195609753520093928112436930159915359852654985937462436307"
+      ],
+      [
+        "0.06024546708131011956730736668590587239700657448733449051650059589866888",
+        "0.09128010551865710947437391209761151967839896536218453281562849089745274",
+        "0.09718516757114220133254537719284558804358150907449026087230644059586371",
+        "0.08936160596311938136461081378563482123723559288337441140994980794686264",
+        "0.07599856820306778101796320943457000118627802479022086852021510836147424",
+        "0.06173565362217812223298214597791325076010318663011680419032358460609476"
+      ]
+    ],
+    "error_bounds": "1e-12",
+    "max_beta_width": ".02",
+    "threshold": ".7"
+  },
+  "output": {
+    "status": "MODEL_INCOMPATIBLE",
+    "decision": "ABSTAIN",
+    "reason": "Disjoint certified enclosures or physical parameter bounds.",
+    "beta_outer": null,
+    "report_pole_outer": null,
+    "beta_width": null,
+    "contract_validated": false,
+    "positive_model_feasibility_proved": false,
+    "enclosure_type": "certified outer enclosure of legal-model compatibility projection; not exact feasible set",
+    "coverage": "conditional on ALL raw errors lying simultaneously in the supplied box",
+    "contracting_bases": 10,
+    "minimum_contraction_bound": 4.571325711114306e-09,
+    "basis_rows": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "rejected_equations": [],
+    "readings": [
+      6,
+      6
+    ],
+    "rho_and_costs_assumed_known": true,
+    "nominal_smallest_singular_value": 0.005209037695802614,
+    "nominal_condition_number": 22.6015611224174,
+    "arithmetic": "exact rational through all certificate decisions; float basis ranking only"
+  }
+}

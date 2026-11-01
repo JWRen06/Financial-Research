@@ -1,0 +1,19 @@
+{
+  "source_sha256": "24cbf1e12899f38edcc250243c4febdeb8e84ee8253236508e8483379e5685bb",
+  "verification_code_sha256": "b3d3c534864e0fb245b92f02040cf7f08683547be36b284f62b1e80b594cb567",
+  "ordered_all_tape_couplings_checked": 2916,
+  "diagnostic_complete_type_error_tapes_checked": 256,
+  "all_path_cash_prefixes_checked": 1264,
+  "endpoint_market_numeric_rows_checked": 6,
+  "exact_prefix_tree_endpoint_distributions_checked": 18,
+  "positive_terminal_cash_floor_and_inherited_monotonicity_bound_checked": true,
+  "one_fixed_endpoint_market_for_all_services_proved_analytically": true,
+  "endpoint_reduction_restricted_to_error_independent_upward_stop_class": true,
+  "monotone_certificate_probability_alone_finance_counterexample_checked": true,
+  "all_original_market_parameters_grid_certified": false,
+  "general_endpoint_theorem_formally_verified": false,
+  "full_menu_optimum_or_small_count_state_space_solved": false,
+  "diagnostic_original_reliable_financial_policy_claimed": false,
+  "new_capital_bounds": 0,
+  "published_papers_overwritten": false
+}

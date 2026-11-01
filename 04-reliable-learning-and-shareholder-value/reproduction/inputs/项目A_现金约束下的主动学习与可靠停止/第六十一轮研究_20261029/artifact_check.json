@@ -1,0 +1,28 @@
+{
+  "source_sha256": "984fc60af55647f9c1eb3050a63f0e226a4b28ca5347cb58d431acdb0396abc1",
+  "independent_rational_interval_digits": 180,
+  "exact_cash_grid_transitions_checked": 2933800,
+  "exact_Bellman_inequalities_checked": 2933800,
+  "exact_capture_direction_inequalities_checked": 2933800,
+  "finite_business_tail_and_positive_initial_capture_coefficient_checked": true,
+  "original_positive_access_fee_and_delay_preserved": true,
+  "original_A51_full_market_learner_and_cash_proof_reused_explicitly": true,
+  "full_market_positive_capture_policies_checked": 3,
+  "rational_full_NPV_intervals_positive": true,
+  "display_NPV_lowers": [
+    2.9053191863633818e-15,
+    4.028674935044219e-16,
+    4.14101050991641e-17
+  ],
+  "positive_rate_fraction_lower": "7/80",
+  "negative_rate_fraction_upper_unchanged": "329/4000",
+  "critical_fraction_bracket": [
+    "329/4000",
+    "7/80"
+  ],
+  "higher_rate_virtual_account_extension_proved_analytically": true,
+  "A54_negative_source_sha256": "f8d9c5641177c16b792ca340968e01763d9590417952328d66247cb86d592842",
+  "original_point_one_target_result_or_realistic_resources_claimed": false,
+  "old_certificates_overwritten": false,
+  "seconds": 19.562999999849126
+}

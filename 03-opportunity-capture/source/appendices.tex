@@ -1,0 +1,212 @@
+\section{收入范围及保守利润的证明}\label{app:bounds}
+这里证明定理\ref{thm:bounds}。需核查三件事：插值确实给出全部投入下的界；界由合法模型逼近；逐点最坏收入的优化确实等于真实最优利润的下端。
+
+令 $\mu$ 为变量变换 $v=1-e^{-z}$ 后的奖励测度。由\eqref{eq:moments}有
+\[
+ \int v\,\mu(dv)=a,\quad \int v^2\,\mu(dv)=b,
+ \quad \int v^3\,\mu(dv)=d.
+\]
+因此 $\pi(dv)=v\mu(dv)/a$ 为 $(0,1)$ 上的概率分布，其两个矩为 $b/a,d/a$，且
+\begin{equation}\label{eq:kernel}
+ P_\nu(q)=a\int g_q(v)\,\pi(dv),\qquad
+ g_q(v)=\frac{1-(1-v)^q}{v}=q\int_0^1(1-tv)^{q-1}dt.
+\end{equation}
+核在闭区间的连续延伸为 $g_q(0)=q,g_q(1)=1$。对内部 $v$ 求三次导数，其符号为
+\[
+ \operatorname{sign}g_q'''(v)
+ =-\operatorname{sign}[(q-1)(q-2)(q-3)].
+\]
+整数 $q=1,2,3$ 时核次数不超过二；其余 $q>0$ 的符号由\eqref{eq:kernel}积分式求导得到。
+
+在节点 $0,s$ 取二次 Hermite 多项式 $h_F$，分别匹配一次与两次条件；在 $\ell,1$ 取 $h_G$，分别匹配两次与一次条件。插值余项的节点因子为 $v(v-s)^2$ 及 $(v-\ell)^2(v-1)$，符号相反。相应的两个二点分布为
+\begin{equation}\label{eq:rules}
+ \pi_F=\frac ra\delta_0+\left(1-\frac ra\right)\delta_s,
+ \qquad
+ \pi_G=\frac wa\delta_\ell+\frac{m_0}a\delta_1.
+\end{equation}
+它们匹配两个矩，权重均为正。对任何二次多项式，三者积分相同。于是 $a\int h_Fd\pi=F$、$a\int h_Gd\pi=G$。余项符号给出\eqref{eq:exact}的界与 $1,2,3$ 的切换。
+
+式\eqref{eq:rules}含端点，不能直接当成严格合法的机会测度。左规则把 $0$ 改为 $\varepsilon>0$，另一个节点改为
+\[
+ s_\varepsilon=\frac{d/a-(b/a)\varepsilon}{b/a-\varepsilon},
+\]
+再由均值确定两权重。右规则把 $1$ 改为 $h=1-\varepsilon$，另一个节点改为
+\[
+ \ell_\varepsilon=\frac{(b/a)h-d/a}{h-b/a}.
+\]
+当 $\varepsilon$ 足够小时，节点严格在 $(0,1)$ 且权重为正，两个矩精确不变。转回奖励测度时每个质量为 $a$ 乘概率权重再除以节点，因此每个近似模型的总奖励有限。固定 $q>0$ 的收入趋于 $F$ 或 $G$，证明界不能再缩小。左端逼近总奖励可能越来越大，正是不能把它混同于已知统一上限的原因。
+
+上端的两个上确界可以交换，得到\eqref{eq:profitbounds}第二式。对下端，$\calM(p)$ 凸，$[0,Q]$ 紧致凸；$P_\nu(q)-cq$ 对 $\nu$ 为连续仿射，对 $q$ 为连续凹函数。在有限测度对有界连续测试函数的弱拓扑下，Sion 定理给
+\[
+ \inf_{\nu\in\calM(p)}\max_{q\in[0,Q]}f_\nu(q)
+ =\max_{q\in[0,Q]}\inf_{\nu\in\calM(p)}f_\nu(q).
+\]
+只需行动一侧紧致，不要求机会测度集合紧致。实际 $q=0$ 的值为零。$L$ 在零连续延伸，故最大值存在。定理得证。
+
+\section{总奖励上限怎样改变公式}\label{app:cap}
+本节既给数值案例使用的公式，也解释为什么有限上限不能简单靠截断原来的直线项处理。以下用 $M_0$ 表示奖励总质量，避免与\eqref{eq:parameters}中的系数 $m_0$ 混淆。奖励矩为 $(M_0,a,b,d)$，其中 $M_0\leq S$。当\eqref{eq:minmass}严格成立，令
+\begin{align}
+ \eta&=\frac{Sd-ab}{Sb-a^2},&\zeta&=\frac{ad-b^2}{Sb-a^2},\notag\\
+ x_\pm&=\frac{\eta\pm\sqrt{\eta^2-4\zeta}}2,&
+ u_+&=\frac{a-Sx_-}{x_+-x_-},\qquad u_-=S-u_+.\label{eq:capnodes}
+\end{align}
+两个节点在 $(0,1)$，权重为正，匹配 $(S,a,b,d)$。这由方程
+$b-\eta a+\zeta S=0$、$d-\eta b+\zeta a=0$ 及严格 Hausdorff 矩条件得到；条件 $S>T(p)$ 使相关局部矩阵正定。定义
+\begin{equation}\label{eq:HS}
+ H_S(p,q)=u_-[1-(1-x_-)^q]+u_+[1-(1-x_+)^q].
+\end{equation}
+因此 $H_S$ 本身是一个合法有限奖励模型。
+
+对 $g(v)=1-(1-v)^q$ 在两个节点各作一阶相切的三次插值 $h$。余项为
+$g^{(4)}(\xi)(v-x_-)^2(v-x_+)^2/4!$。第四导符号是
+$-\operatorname{sign}[q(q-1)(q-2)(q-3)]$。在 $[1,2]$ 和 $[3,\infty)$ 上 $h\geq g$，且 $h(0)\geq0$。所以对 $M_0\leq S$ 也有
+\[
+ \int g\,d\mu\leq h(0)S+\sum_{i=1}^3h_i m_i=H_S(p,q),
+ \qquad (m_1,m_2,m_3)=(a,b,d).
+\]
+其他正区间不等号反向，$h(0)\leq0$ 保证质量不等式仍有正确方向。
+
+另一组三次插值用 $0,\ell,1$，内部节点为二重接触，权重为 $S-T(p),w/\ell,m_0$。余项因子 $v(v-\ell)^2(v-1)$ 与前者方向相反；核在零为零，得到 $G$。将两个端点内移，同时保持总质量和三个读数。三个权重、一个内部节点的 Jacobian 为非奇异合流 Vandermonde 矩阵，故隐函数定理给出严格合法的正权近似。由此
+\[
+ L_S(p,q)=\min\{H_S(p,q),G(p,q)\},\qquad
+ U_S(p,q)=\max\{H_S(p,q),G(p,q)\}.
+\]
+非整数 $q$ 在端点的光滑性可由内部节点极限处理；整数处使用连续性。利润公式再用附录\ref{app:bounds}的上确界交换和 Sion 定理。$S\leq T(p)$ 的边界或不可行情形不在这些严格公式的适用范围内。
+
+\section{测量下界、保守行动与可计算停止}\label{app:statistics}
+\subsection{利润上限的必要观测次数}
+证明定理\ref{thm:precision}的下界。固定 $p_0,c$。对 $q\leq3$，任何一致模型收入至多 $p_{03}$；对 $q\geq3$，收入上界为 $F$ 且 $F'-c\geq r-c>0$。所以充分大的 $Q$ 满足 $\Vup(p_0,Q,c)=F(p_0,Q)-cQ$。
+
+在概率矩表示中令 $\pi_\varepsilon=(1-\varepsilon)\pi_0+\varepsilon\delta_0$。所得读数为
+\begin{equation}
+ p_{\varepsilon k}=(1-\varepsilon)p_{0k}+\varepsilon ak,
+ \qquad k=1,2,3.
+\end{equation}
+它们仍为严格内部读数；按附录\ref{app:bounds}可由有限严格模型精确实现。由于 $a$ 不变而 $b,d$ 同时乘 $1-\varepsilon$，节点 $s$ 不变，直接代入得
+\[
+ F(p_\varepsilon,Q)=(1-\varepsilon)F(p_0,Q)+\varepsilon aQ.
+\]
+所以 $\Vup(p_\varepsilon,Q,c)\geq\Vup(p_0,Q,c)+\varepsilon D_Q$。取 $\varepsilon>\tau/D_Q$。基准与替代下事件 $\{\widehat U\leq\Vup(p_0,Q,c)+\tau\}$ 的概率至少相差 $1-2\delta$。
+
+另一方面，逐条高斯观测的条件 KL 至多 $\varepsilon^2 C_0^2/(2\sigma_{\min}^2)$。自适应选点不改变这个上界。链式法则及停止后的无信息填充给总 KL 至多 $N$ 倍；Pinsker 不等式给总变差至多 $\varepsilon C_0\sqrt N/(2\sigma_{\min})$。比较两者并从上方令 $\varepsilon\downarrow\tau/D_Q$，得到\eqref{eq:lowerN}。由于 $r<a$，其关于 $Q$ 的平方阶成立。这里没有假定日志能分辨同均值下不同的奖励组成。
+
+\subsection{保守行动的误差为何可以局部控制}
+固定内部 $p_0$，取一个小的闭邻域 $\mathcal K$，使所有公式分母与节点到端点的距离均有正下界。由 $L\leq G\leq T(p)$，所有邻域内的保守最优投入都在
+\[
+ [0,R],\qquad R=\frac{\sup_{p\in\mathcal K}T(p)}c.
+\]
+$R$ 与 $Q$ 无关。$F,G$ 对读数的导数在 $\mathcal K\times[0,R]$ 上有统一界；$F(p,0)=0$、$G(p,0+)=m_0(p)$ 不妨碍两者最小值在零连续。故存在 $K_R<\infty$ 使
+\[
+ |L(p,q)-L(p',q)|\leq K_R\|p-p'\|_\infty,
+ \qquad 0\leq q\leq R.
+\]
+若 $y$ 的误差至多 $e$，则以 $y$ 计算出的精确最优保守投入 $q_y$ 满足
+\[
+ \Vlo(p,Q,c)-[L(p,q_y)-cq_y]\leq2K_Re.
+\]
+因此行动精度只需均值误差 $O(\tau)$，无须 $O(\tau/Q)$。
+
+还需给出不知道真实 $p$ 时可以执行的停止规则。等方差下第 $j$ 阶段每个测试点取 $n_j=32\cdot2^{j-1}$ 条，设
+\begin{equation}\label{eq:conf}
+ e_j=\sigma\sqrt{\frac{2\log[6j(j+1)/\delta]}{n_j}},
+ \qquad I_j=[y_j-e_j,y_j+e_j].
+\end{equation}
+高斯尾界对每个点、每阶段失败至多 $\delta/[3j(j+1)]$，相加不超过 $\delta$。未通过可行性检查时继续取样。八个顶点均严格可行即可保证整个矩盒可行，因为可行读数集合凸。已知异方差可使用逐坐标半宽。
+
+下面的规则不需要把 $K_R$ 当作输入。取中心的精确最优保守投入 $q_y$。由附录\ref{app:bounds}的下插值，在该点求出全域有效的收入下界 $b^-\cdot p$，令
+\begin{equation}\label{eq:stopW}
+ W=b^-\cdot y_j-e_j\|b^-\|_1-cq_y,
+ \qquad Z=\max_{v\in\operatorname{vertices}(I_j)}\Vlo(v,Q,c).
+\end{equation}
+若 $W<0$ 则候选行动换为零并置 $W=0$；若 $q_y=0$ 也直接用零。对固定 $q$，$L(p,q)$ 关于 $p$ 凸：混合两个可行测度给下确界的凸性不等式。对 $q$ 取上确界仍凸，故 $\Vlo(p)\leq Z$。下插值保证候选行动利润至少 $W$。因此 $Z-W\leq\tau$ 是保护数据选择行动的合法停止条件，不需要在连续行动区间上额外撒网格。
+
+为计算 $b^-$，记 $g=g_q(x)$，$g'=\partial_xg_q(x)$。左规则的多项式系数为
+\[
+ A_0=q,\quad \beta=2(g-q)/x-g',\quad
+ \gamma=(xg'-g+q)/x^2.
+\]
+右规则为
+\[
+ \gamma=\frac{1-g-g'(1-x)}{(1-x)^2},\quad
+ \beta=g'-2\gamma x,\quad A_0=g-g'x+\gamma x^2.
+\]
+在 $q\in[1,2]$ 或 $q\geq3$ 取右规则 $x=\ell$，其余取左规则 $x=s$。原均值系数为
+\[
+ b^-=(A_0+2\beta+3\gamma,\ -\beta-3\gamma,\ \gamma).
+\]
+它对全部合法模型有效，而不是仅在中心有效。邻域内这些系数在 $q\leq R$ 统一有界，故 $Z-W=O(e_j)$。样本均值几乎必然收敛，盒最终进入安全邻域，程序几乎必然终止；对\eqref{eq:conf}求解 $e_j\leq C\tau$ 并计入进入邻域的成本，得到\eqref{eq:actionN}。没有由此宣称期望停止次数同阶。
+
+有总奖励上限时，将可行性检查加入 $T(v)<S$。由于最小质量函数 $T$ 凸，顶点检查覆盖整个盒。相同论证对 $L_S,\Vlo_S$ 成立，核插值与精确有限分支计算可替换对应部分。正文模拟使用附录\ref{app:computation}的更紧行动损失界，不将\eqref{eq:stopW}的较宽金额差作为停止条件。
+
+\section{连续低强度试验下的有限池下界}\label{app:continuous}
+本节只证明一个构造，说明固定几个整数测试点不是困难的必要原因。固定 $m\geq1,z_0>0,\rho>c>0$。对已知整数 $K>m$，取
+\[
+ \nu_{K,\theta}=(K-m)\delta_{\rho(1+\theta)/K}+m\delta_{z_0},
+ \qquad \theta\in[0,\theta_0].
+\]
+每个原子质量对应整数个单位奖励机会。观测为两个独立二项计数之和。每次允许历史依赖地选择任意 $q\in[0,q_p]$，其中 $q_p$ 固定。下文选择充分小的 $\theta_0>0$。两速度信息用于构造利润报告的下界，不作为保守配置算法的先验。
+
+选择 $\kappa$ 使 $\rho e^{-\rho/\kappa}>c$。对充分大 $K$、$Q_0\leq Q\leq K/\kappa$，凹利润在 $Q$ 仍有正导数，因此真实最优投入为 $Q$。这个双节点奖励测度正好是其四个矩 $(K,a,b,d)$ 的 Gauss 规则，附录\ref{app:cap}给 $H_K=P_{K,\theta}$。当 $Q_0$ 足够大，$q<3$ 的上包络至多 $3p_1$，不能超过 $Q$ 处净收益，所以此时真实最优利润也等于三读数与奖励上限支持的 $\Vup_K$。
+
+即使给观测者所有 $K$ 个带群体标签的首次捕获指示，快组也不提供关于 $\theta$ 的信息。慢组的概率为 $a_\theta(q)=1-e^{-q\rho(1+\theta)/K}$。利用 Bernoulli KL 的二次上界，对 $q>0$ 有
+\begin{align}
+ \KL_q(0,\theta)
+ &\leq(K-m)\frac{[a_\theta(q)-a_0(q)]^2}{a_\theta(q)[1-a_\theta(q)]}\notag\\
+ &\leq\theta^2q\rho\exp\!\left(\frac{2(1+\theta)q\rho}{K}\right).\label{eq:nativeKL}
+\end{align}
+这里用了 $|a_\theta-a_0|\leq\theta q\rho/K$ 及
+$a_\theta(1-a_\theta)\geq(q\rho/K)e^{-2(1+\theta)q\rho/K}$；$q=0$ 的 KL 为零。只读总数的信息不会更多。故对任意连续自适应选点和至多 $N$ 条记录，链式 KL 不超过\eqref{eq:nativeKL}在 $q=q_p$ 的 $N$ 倍。
+
+对 $K\geq2m$，利润关于 $\theta$ 的导数至少为
+\[
+ \partial_\theta P_{K,\theta}(Q)
+ \geq hQ,\qquad h=\tfrac12\rho e^{-\rho(1+\theta_0)/\kappa}>0.
+\]
+取 $\theta=2\tau/(hQ)\leq\theta_0$，使利润相差至少 $2\tau$。同附录\ref{app:statistics}的报告事件分离给总变差至少 $1-2\delta$。结合 Pinsker 有
+\begin{equation}
+ N\geq\frac{2(1-2\delta)^2}{\theta^2q_p\rho
+ \exp[2(1+\theta)q_p\rho/K]}
+ \geq C\frac{Q^2}{\tau^2}.
+\end{equation}
+常数可对充分大 $K$ 统一，但只在上述有限部署区间适用。固定 $K$ 超过该范围后不能继续套用平方增长。若 $q_p$ 随 $Q$ 增大，信息上界改变，也不能把结论称为同一个固定低强度试验问题。
+
+\section{原始计数的均值区间与行动停止公式}\label{app:computation}
+本节说明正文的 7200 条路径究竟如何停止。对独立 Bernoulli 之和 $Y$、均值 $\mu$，有
+$\E e^{\lambda Y}\leq\exp\{\mu(e^\lambda-1)\}$。这是计数的矩母函数上界，并非假设观测服从 Poisson。$n$ 个窗口的均值 $y$ 在两侧 Chernoff 事件上满足
+$y-\mu\leq\sqrt{2\mu t/n}+t/n$ 和 $\mu-y\leq\sqrt{2\mu t/n}$。令 $b_t=t/n$ 可得保守区间
+\begin{equation}
+ \mu\in\left[\max\{0,y-\sqrt{2yb_t}-b_t\},\
+ y+\sqrt{2yb_t}+2b_t\right].
+\end{equation}
+每个倍增阶段取 $t=\log[6j(j+1)/\delta]$，对三点及全部阶段求和得到概率至少 $1-\delta$ 的共同覆盖。固定均值邻域内，区间宽度由均值而非最大计数 $K$ 控制。
+
+行动计算利用所有相关 $G$ 峰都位于 3 的右侧这一可检查事实。定义
+\begin{equation}
+ t_0=p_2-p_1,\quad \ell=\frac{-p_1+2p_2-p_3}{p_2-p_1},
+ \quad h_q(\ell)=\frac{-\log(1-\ell)}\ell(1-\ell)^{q-1}.
+\end{equation}
+有 $G'(p,q)=t_0h_q(\ell)$，$-G''=t_0[-\log(1-\ell)]h_q(\ell)$。由
+$-\log(1-\ell)/\ell=\int_0^1(1-s\ell)^{-1}ds$
+可知 $q\geq2$ 时 $h_q$ 随 $\ell$ 非增。
+
+从三个均值区间直接对 $p_2-p_1$ 与 $-p_1+2p_2-p_3$ 取界，得到 $t_l,t_h,\ell_l,\ell_h$；不先展开 $a,b,d$，以保留抵消。检查严格矩可行性、各顶点 $T<S$，并要求 $t_lh_3(\ell_h)>c$。于是所有可能的 $G$ 峰都在 3 右侧。由于 $L_S\leq G$ 且 $q\geq3$ 时 $L_S=G$，此峰恰为全局最优保守投入，而不是仅为局部候选。
+
+设 $z_l=-\log(1-\ell_l)$、$z_h=-\log(1-\ell_h)$。令 $D_{\min}$、$D_{\max}$ 为 $\ell(1-\ell)$ 在此区间的最小、最大值，给出 $J_l=t_l/D_{\max}$、$J_h=t_h/D_{\min}$。若下端对数为正，全部未截断峰在
+\[
+ \left[\frac{\log(J_lz_l/c)}{z_h},\
+       \frac{\log(J_hz_h/c)}{z_l}\right].
+\]
+将两端分别截到 $[3,Q]$ 得到 $[q_l,q_h]$。取中心的 $G$ 最优投入 $\widehat q$，并令
+\begin{align}
+ d_0&=\max\{|t_lh_{\widehat q}(\ell_h)-c|,
+                    |t_hh_{\widehat q}(\ell_l)-c|\},\notag\\
+ \gamma&=t_lz_lh_{\max(\widehat q,q_h)}(\ell_h)>0.
+\end{align}
+整段上的强凹性给最坏行动损失至多 $d_0^2/(2\gamma)$。若 $q_h<Q$，真实峰均为内部峰，还可由二阶 Taylor 界得到
+\[
+ \frac12 t_hz_hh_3(\ell_l)
+ \max\{|\widehat q-q_l|,|\widehat q-q_h|\}^2.
+\]
+使用两界的较小值；在 $Q$ 边界活跃时只用强凹性界。只有上界不超过 $\tau$ 才停止。任一检查失败就继续采样，不用数值优化器声称已经验证整段。共同覆盖事件同时保护全部阶段和数据选择的行动；本机程序另与完整四段最优值交叉核查。
+
+峰和参数在严格内部邻域内连续，$c>0$ 固定时峰区间局部有界、曲率有正下界。因此区间收缩使损失界趋零，充分观测次数可以不依赖更大的 $Q$。这一停止公式是特定案例对一般保守行动论证的实现，不是新的通用统计定理。

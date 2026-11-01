@@ -1,0 +1,14 @@
+{
+  "scenarios": 70,
+  "legal_single_world_coverage_checks": 63,
+  "indistinguishable_worlds_covered": 2,
+  "exact_zero_error_check": true,
+  "three_cost_four_prefix_exact_rank_witness": true,
+  "adversarial_shared_error_checks": 13,
+  "additional_beta_rho_grid_checks": 12,
+  "misspecification_cases": 6,
+  "misspecification_rejections": 4,
+  "synthetic_contract_test_only": true,
+  "seconds": 4.63,
+  "audit_source_sha256": "4c87e612a24973ebe22979d02744f9782e1e24012843d78612a31d6ae623a42a"
+}

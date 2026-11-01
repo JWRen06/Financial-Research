@@ -1,0 +1,19 @@
+{
+  "source_sha256": "7b4209042311e923c583f444db4aa28fed75f17b054c79d0eb33d34346573fc4",
+  "independent_rational_precision_digits": 110,
+  "complete_positive_exposure_cover_cells_checked": 1692,
+  "affine_resource_supports_checked": 7,
+  "mixed_resource_supports_checked": 5,
+  "full_second_moment_hard_pair_recomputed": true,
+  "positive_slow_speed_market_strict_bad_profit_proved_analytically": true,
+  "necessary_integer_opportunity_capacity": 4870678624,
+  "joint_frontier_points_checked": 10,
+  "separate_time_and_capacity_bounds_pass_but_joint_information_excludes_example": true,
+  "example_good_rejection_must_exceed": "4/25 at bad issuance <=1/20",
+  "original_full_market_binary_observation_and_adaptive_control_permissions_preserved": true,
+  "shadow_resource_multipliers_misidentified_as_actual_setup_cost": false,
+  "new_bad_pair_claimed_same_as_old_slow_unprofitable_pair": false,
+  "old_per_business_rare_profit_upper_reused_for_positive_slow_pair": false,
+  "necessary_resource_bounds_claimed_feasible_financial_policy": false,
+  "sharp_all_policy_resource_frontier_or_new_generic_duality_claimed": false
+}

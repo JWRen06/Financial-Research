@@ -1,0 +1,72 @@
+{
+  "input": {
+    "rho": "1",
+    "costs": [
+      "1",
+      "1.0017782794100389228"
+    ],
+    "reports": [
+      [
+        "0.08929098424645674522706688784060787814323523726344293897753595567047148",
+        "0.1237702893488584691242075181863403308514556634642553150635134293313151",
+        "0.1211844644044435214015849039274650637197515450943655582664116447800545",
+        "0.1032035002256030151189379878049073452038117534752725953555938252958550",
+        "0.08195590678599619156599519912076032327006205417602119196415403609135368",
+        "0.06271763870748833019966863358482253772735495627758345262390153159001658"
+      ],
+      [
+        "0.08920971460222181755081682254994890949391660186949192700298902930489444",
+        "0.1236895700290945434160546209794953760909630284639427165968761464926346",
+        "0.1211327571749570210051963167631619348337574327685609850914335551847380",
+        "0.1031793056764027258377039459820560007849046908405525650066747297907943",
+        "0.08194977992207595050098521489035891547413229223479678585931324792700541",
+        "0.06272099001495995067438441929612140855688318229799688072105473846145831"
+      ]
+    ],
+    "error_bounds": "1e-6",
+    "max_beta_width": ".02",
+    "threshold": ".7"
+  },
+  "output": {
+    "status": "ABSTAIN_NO_CONTRACTION",
+    "decision": "ABSTAIN",
+    "reason": null,
+    "beta_outer": {
+      "exact": [
+        "0",
+        "1"
+      ],
+      "outward_float": [
+        -5e-324,
+        1.0000000000000002
+      ]
+    },
+    "report_pole_outer": {
+      "exact": [
+        "0",
+        "1"
+      ],
+      "outward_float": [
+        -5e-324,
+        1.0000000000000002
+      ]
+    },
+    "beta_width": 1.0,
+    "contract_validated": false,
+    "positive_model_feasibility_proved": false,
+    "enclosure_type": "certified outer enclosure of legal-model compatibility projection; not exact feasible set",
+    "coverage": "conditional on ALL raw errors lying simultaneously in the supplied box",
+    "contracting_bases": 0,
+    "minimum_contraction_bound": null,
+    "basis_rows": [],
+    "rejected_equations": [],
+    "readings": [
+      6,
+      6
+    ],
+    "rho_and_costs_assumed_known": true,
+    "nominal_smallest_singular_value": 1.530396286704849e-05,
+    "nominal_condition_number": 17.944710439923515,
+    "arithmetic": "exact rational through all certificate decisions; float basis ranking only"
+  }
+}

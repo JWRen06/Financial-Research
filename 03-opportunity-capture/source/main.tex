@@ -1,0 +1,38 @@
+\documentclass[UTF8,fontset=windows,11pt,a4paper]{ctexart}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,geometry}
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{hyperref}
+\geometry{left=27mm,right=27mm,top=25mm,bottom=25mm}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue,pdftitle={有限预算下的机会捕获：利润范围与测量精度}}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.18}
+\pagestyle{plain}
+\makeatletter
+\renewcommand{\@maketitle}{\newpage\null\vskip0em
+ \begin{center}{\LARGE\heiti\@title\par}\vskip1em
+ {\normalsize\@date\par}\end{center}\par\vskip0.7em}
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{16pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+\ctexset{section={format=\large\bfseries},subsection={format=\normalsize\bfseries}}
+\newtheorem{theorem}{定理}
+\renewcommand{\proofname}{证明}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\calM}{\mathcal M}
+\newcommand{\Vup}{\overline V}
+\newcommand{\Vlo}{\underline V}
+\newcommand{\qrob}{q_{\mathrm{rob}}}
+\newcommand{\KL}{\operatorname{KL}}
+\begin{document}
+\title{有限预算下的机会捕获：\\利润范围与测量精度}
+\author{}\date{2026年10月31日}
+\maketitle
+\input{body}
+\clearpage\appendix
+\numberwithin{equation}{section}
+\input{appendices}
+\end{document}

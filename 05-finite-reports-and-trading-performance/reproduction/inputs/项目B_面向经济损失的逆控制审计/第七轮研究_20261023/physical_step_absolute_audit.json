@@ -1,0 +1,163 @@
+{
+  "calibration_centers": [
+    "1/100",
+    "99/10000",
+    "32/3125",
+    "2611/250000"
+  ],
+  "known_physical_step": "1/1000",
+  "calibration_raw_radius": "1/1000000",
+  "main_raw_radius": "1/100000000",
+  "main_centers": [
+    [
+      "106722/10462075",
+      "5282739/523103750",
+      "522991161/52310375000",
+      "51776124939/5231037500000"
+    ],
+    [
+      "53361/5206825",
+      "5282739/520682500",
+      "522991161/52068250000",
+      "51776124939/5206825000000"
+    ]
+  ],
+  "center_certificate": {
+    "report_pole": {
+      "lower": "101/171",
+      "upper": "103/169",
+      "method": "three_snapshot_constant_input_difference_ratio",
+      "necessary_bounds_nonempty": true,
+      "nontrivial_upper": true,
+      "positive_model_feasibility_proved": false,
+      "contract_validated": false
+    },
+    "report_gain": {
+      "lower": "8462/21375",
+      "upper": "8538/21125",
+      "positive_gain_lower_proved": true,
+      "contract_validated": false,
+      "positive_model_feasibility_proved": false
+    },
+    "normalized_audit": {
+      "decision": "ACCEPT_CANONICAL_LOSS_CONDITIONAL",
+      "beta_lower": "24/25",
+      "loss_upper": "1/1000",
+      "public_report_pole_upper": "103/169",
+      "simultaneous_raw_error_radius": "1/100000000",
+      "readings_per_fee": 4,
+      "checks": [
+        {
+          "pole": "0",
+          "kind": "denominator",
+          "center": "-174330387/1676129035750",
+          "shared_error_radius": "23/375000000",
+          "upper": "-261341376628711/2514193553625000000"
+        },
+        {
+          "pole": "0",
+          "kind": "threshold_numerator",
+          "center": "-174330387/83806451787500",
+          "shared_error_radius": "743/6250000000",
+          "upper": "-82183738005751/41903225893750000000"
+        },
+        {
+          "pole": "103/169",
+          "kind": "denominator",
+          "center": "-11324431503/283265807041750",
+          "shared_error_radius": "391/3960937500",
+          "upper": "-1059043987594337/26556169410164062500"
+        },
+        {
+          "pole": "103/169",
+          "kind": "threshold_numerator",
+          "center": "-11324431503/14163290352087500",
+          "shared_error_radius": "12631/66015625000",
+          "upper": "-269203741066517/442602823502734375000"
+        }
+      ],
+      "contract_validated": false,
+      "positive_model_feasibility_proved": false
+    },
+    "total_raw_readings": 12,
+    "stationary_start_required": false,
+    "decision": "ACCEPT_ABSOLUTE_CANONICAL_LOSS_CONDITIONAL",
+    "target_measure_mass_upper": "7603949919725625000000000000000000000000000000000000000000000000000000000000000000000000000000000/8000049455621159794849685800533547956653365525892961239874472733729943835175854026308893463889289",
+    "target_response_kernel_lower": "27235661534307988877870091336258375976571130663079508292203267342920971559908844845818109/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "no_trade_reference_quadratic_cost_upper": "19271424125419056449195711370820312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/64000791292384415181896120881697001830052494435987733074787980504568563318935481320987760191192809294392021958146464640752733931822891121692630817443482540358286250722079349888551487426448925521",
+    "absolute_canonical_excess_quadratic_cost_upper": "19271424125419056449195711370820312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/64000791292384415181896120881697001830052494435987733074787980504568563318935481320987760191192809294392021958146464640752733931822891121692630817443482540358286250722079349888551487426448925521",
+    "interpretation": "Reference quadratic-objective units tied to the known physical inventory step. Not a cash loss/return claim or total calibration-cost estimate."
+  },
+  "all_actual_noise_union_certificate": {
+    "report_pole": {
+      "lower": "25/43",
+      "upper": "13/21",
+      "method": "three_snapshot_constant_input_difference_ratio",
+      "necessary_bounds_nonempty": true,
+      "nontrivial_upper": true,
+      "positive_model_feasibility_proved": false,
+      "contract_validated": false
+    },
+    "report_gain": {
+      "lower": "2106/5375",
+      "upper": "1072/2625",
+      "positive_gain_lower_proved": true,
+      "contract_validated": false,
+      "positive_model_feasibility_proved": false
+    },
+    "normalized_audit": {
+      "decision": "ACCEPT_CANONICAL_LOSS_CONDITIONAL",
+      "beta_lower": "24/25",
+      "loss_upper": "1/1000",
+      "public_report_pole_upper": "13/21",
+      "simultaneous_raw_error_radius": "1/50000000",
+      "readings_per_fee": 4,
+      "checks": [
+        {
+          "pole": "0",
+          "kind": "denominator",
+          "center": "-174330387/1676129035750",
+          "shared_error_radius": "23/187500000",
+          "upper": "-130593586378711/1257096776812500000"
+        },
+        {
+          "pole": "0",
+          "kind": "threshold_numerator",
+          "center": "-174330387/83806451787500",
+          "shared_error_radius": "743/3125000000",
+          "upper": "-38601141255751/20951612946875000000"
+        },
+        {
+          "pole": "13/21",
+          "kind": "denominator",
+          "center": "-65321487/1676129035750",
+          "shared_error_radius": "391/1968750000",
+          "upper": "-511785244313087/13199516156531250000"
+        },
+        {
+          "pole": "13/21",
+          "kind": "threshold_numerator",
+          "center": "-65321487/83806451787500",
+          "shared_error_radius": "12631/32812500000",
+          "upper": "-86784159972767/219991935942187500000"
+        }
+      ],
+      "contract_validated": false,
+      "positive_model_feasibility_proved": false
+    },
+    "total_raw_readings": 12,
+    "stationary_start_required": false,
+    "decision": "ACCEPT_ABSOLUTE_CANONICAL_LOSS_CONDITIONAL",
+    "target_measure_mass_upper": "5736318694673750000000000000000000000000000000000000000000000000000000000000000000000000000000000/5973092940275878939241351322118997398976124248710911027360779807575725023710830269229447991592121",
+    "target_response_kernel_lower": "27235661534307988877870091336258375976571130663079508292203267342920971559908844845818109/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "no_trade_reference_quadratic_cost_upper": "3655784625738540969012364129843750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/11892613091057848229543506088511410540602808295370355749418592118547326785673815321870183622882579879972063041808456347846691347916609482667750952130180006775819618303362199422252009702809759547",
+    "absolute_canonical_excess_quadratic_cost_upper": "3655784625738540969012364129843750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/11892613091057848229543506088511410540602808295370355749418592118547326785673815321870183622882579879972063041808456347846691347916609482667750952130180006775819618303362199422252009702809759547",
+    "interpretation": "Reference quadratic-objective units tied to the known physical inventory step. Not a cash loss/return claim or total calibration-cost estimate."
+  },
+  "independently_checked_good_world_absolute_excess": [
+    "0.000000010915206537",
+    "0.000000010915206538"
+  ],
+  "single_calibration_adjustment_item": "1/2000000",
+  "scope": "Extra known physical step and two holding regimes with invariant report g,r. No stationary start or prior gain lower bound. Nonnegative initial states are retained; rho and internal fees remain known. The mass bound uses the same positive target across fee trials. Absolute bound concerns canonical zero-state excess quadratic objective; no total financial-cost or real-profit claim."
+}

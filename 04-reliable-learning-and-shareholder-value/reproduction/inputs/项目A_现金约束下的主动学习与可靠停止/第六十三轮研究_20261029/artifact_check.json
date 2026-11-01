@@ -1,0 +1,21 @@
+{
+  "source_sha256": "f2c61aaad9b27d7f3df7a5dcc30e0892d49dcbc00bc9b64998aceaa30600c072",
+  "verification_code_sha256": "1c7574ff38a651ad2fbacb45f6d6fd84eaf363f959360fbe295a4d3d7cf940fb",
+  "rational_interval_engine_sha256": "af87115e344b638fea22c0a0cf65fd66bfedca99ccff6feb2df34cfb7b8b0c51",
+  "original_market_risks_action_and_success_fee_preserved": true,
+  "positive_business_fee_and_delay_preserved": true,
+  "exact_constant_reserve_all_path_transition_inequality_checked": true,
+  "full_finite_business_value_and_initial_equity_book_checked": true,
+  "ordinary_original_point_one_target_finite_sufficient_policy_checked": true,
+  "late_fixed_sample_full_good_bad_Chernoff_checks": 2,
+  "finite_seed_growth_full_learning_prepayment_checked": true,
+  "branch_maximum_calendar_and_capacity_checked": true,
+  "sufficient_cash_rate_fraction": "1999999/2000000",
+  "whole_good_NPV_strict_lower": ".10000291170519",
+  "higher_cash_rate_extension_proved_analytically": true,
+  "actual_capture_qualification_or_practical_scale_claimed": false,
+  "original_A60_necessary_cash_rate_unchanged": true,
+  "high_rate_ordinary_value_gap_ratio_strictly_below": "1.00463",
+  "new_ordinary_sufficient_policies": 1,
+  "published_stage_snapshot_overwritten": false
+}

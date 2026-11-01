@@ -1,0 +1,22 @@
+{
+  "source_sha256": "f8d9c5641177c16b792ca340968e01763d9590417952328d66247cb86d592842",
+  "independent_decimal_digits": 180,
+  "negative_piecewise_cash_certificates_checked": 4,
+  "negative_cash_endpoint_inequalities_checked": 56044,
+  "negative_rate_fraction_upper": "329/4000",
+  "positive_rate_fraction_lower": "9/100",
+  "critical_fraction_bracket": [
+    "329/4000",
+    "9/100"
+  ],
+  "exact_cash_grid_transitions_checked": 1466908,
+  "exact_Bellman_inequalities_checked": 1466908,
+  "exact_capture_direction_inequalities_checked": 1466908,
+  "full_market_positive_capture_policies_checked": 3,
+  "late_learner_and_finite_business_tail_checked": true,
+  "cash_rate_monotonic_negative_extension_and_positive_virtual_account_extension_proved": true,
+  "once_equity_learning_fee_actual_capture_alpha_beta_kept": true,
+  "positive_access_fee_time_same_as_A51": true,
+  "failed_finite_LP_family_claimed_global_result": false,
+  "exact_frontier_point_one_profit_or_realistic_resources_claimed": false
+}

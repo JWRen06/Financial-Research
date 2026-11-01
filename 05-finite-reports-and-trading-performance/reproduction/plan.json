@@ -1,0 +1,8 @@
+{
+  "jobs": [
+    "项目B_面向经济损失的逆控制审计/第三十四轮研究_20261027/verify_standard_sqp.py",
+    "项目B_面向经济损失的逆控制审计/第四十二轮研究_20261028/verify_autonomous_sdp_direction_pilot.py"
+  ],
+  "input_root": "inputs",
+  "group": "B"
+}

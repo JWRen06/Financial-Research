@@ -1,0 +1,14 @@
+{
+  "count": 96,
+  "legal_boxes_checked": 90,
+  "fault_rejected": 4,
+  "seconds": 5.076463460922241,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "center_design": "deterministic exact-response approximations; no stochastic sampling",
+  "hashes": {
+    "audit_interval.py": "4c87e612a24973ebe22979d02744f9782e1e24012843d78612a31d6ae623a42a",
+    "hidden_system.py": "c7f888b0460e65c406c226bd2574b04249366069f471730ad7108d776b16fd0a",
+    "continuous_experiments.py": "25d4a56d323c99e2c8acdb33f7296c8dc5edea59684f23ce953793a219b5198a"
+  }
+}

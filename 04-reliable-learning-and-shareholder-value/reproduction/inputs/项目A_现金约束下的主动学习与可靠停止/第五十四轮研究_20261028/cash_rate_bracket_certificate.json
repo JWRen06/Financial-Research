@@ -1,0 +1,30 @@
+{
+  "negative": {
+    "path": "negative_rate_certificate.json",
+    "sha256": "18305d022fab9c84cb29f1a8c9a8744ede6d6b933ab9c47aab6a58fc8a1d461d"
+  },
+  "positive": {
+    "path": "positive_rate009_certificate.json",
+    "sha256": "b5fd6516004f2db39bcd905fa24a1d8ae002920a5cb0f48e50d1f2ad50119e96"
+  },
+  "cash_grid": {
+    "path": "positive_cash_grid_rate009.npz",
+    "sha256": "5b29c074d8ab8408fc342e1eca9d72b970e430c5eaeefb407620b8350fa7d6c8"
+  },
+  "negative_cash_rate_fraction_upper": "329/4000",
+  "positive_cash_rate_fraction_lower": "9/100",
+  "critical_fraction_bracket": [
+    "329/4000",
+    "9/100"
+  ],
+  "finite_policy_negative_and_zero_unattained_for_positive_low_rates": true,
+  "positive_interval_by_virtual_account": [
+    "9/100",
+    "1"
+  ],
+  "full_market_reliability_once_equity_learning_fee_and_actual_capture_qualification_kept": true,
+  "same_positive_A51_business_fee_time": true,
+  "smaller_operating_exposure_explicit": true,
+  "failed_LP_family_claimed_global_positive": false,
+  "exact_frontier_or_point_one_target_claimed": false
+}
